@@ -1,0 +1,3936 @@
+{
+  "nodes": [
+    {
+      "id": "node-alpha",
+      "name": "Node A (North Rubble Pile)",
+      "x": 18,
+      "y": 45,
+      "status": "ONLINE",
+      "battery": 94,
+      "signal_rssi": -58,
+      "hardware": "ESP32 + MPU6050 + INMP441",
+      "last_seen": "2026-10-15T16:34:37.883Z",
+      "latest_telemetry": {
+        "audio_level": 68.4,
+        "vibration_rms": 0.082,
+        "vibration_peak": 0.28,
+        "temperature": 24.2,
+        "periodicity": 0.78,
+        "dominant_bpm": 104,
+        "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+        "evidence_index": 86
+      }
+    },
+    {
+      "id": "node-bravo",
+      "name": "Node B (East Collapsed Beam)",
+      "x": 38,
+      "y": 35,
+      "status": "ONLINE",
+      "battery": 88,
+      "signal_rssi": -64,
+      "hardware": "ESP32 + MPU6050 + INMP441",
+      "last_seen": "2026-10-15T16:34:37.884Z",
+      "latest_telemetry": {
+        "audio_level": 74.8,
+        "vibration_rms": 0.165,
+        "vibration_peak": 0.49,
+        "temperature": 24,
+        "periodicity": 0.88,
+        "dominant_bpm": 104,
+        "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+        "evidence_index": 94
+      }
+    },
+    {
+      "id": "node-charlie",
+      "name": "Node C (South Basement Void)",
+      "x": 25,
+      "y": 15,
+      "status": "ONLINE",
+      "battery": 91,
+      "signal_rssi": -61,
+      "hardware": "ESP32 + MPU6050 + INMP441",
+      "last_seen": "2026-10-15T16:34:37.884Z",
+      "latest_telemetry": {
+        "audio_level": 51.2,
+        "vibration_rms": 0.046,
+        "vibration_peak": 0.12,
+        "temperature": 23.5,
+        "periodicity": 0.52,
+        "dominant_bpm": 104,
+        "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+        "evidence_index": 62
+      }
+    }
+  ],
+  "telemetry_history": [
+    {
+      "node_id": "node-alpha",
+      "audio_level": 36.4,
+      "vibration_rms": 0.025,
+      "vibration_peak": 0.038,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:27:02.316Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 39.9,
+      "vibration_rms": 0.02,
+      "vibration_peak": 0.028,
+      "temperature": 24,
+      "periodicity": 0.08,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 12,
+      "timestamp": "2026-10-15T14:27:02.316Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 36.3,
+      "vibration_rms": 0.022,
+      "vibration_peak": 0.034,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 5,
+      "timestamp": "2026-10-15T14:27:02.316Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 37.2,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.043,
+      "temperature": 24.1,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:27:05.320Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 39,
+      "vibration_rms": 0.021,
+      "vibration_peak": 0.031,
+      "temperature": 24.2,
+      "periodicity": 0.08,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 12,
+      "timestamp": "2026-10-15T14:27:05.320Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 36.5,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.048,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 5,
+      "timestamp": "2026-10-15T14:27:05.320Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 39.1,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.038,
+      "temperature": 24.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:27:08.323Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 36.7,
+      "vibration_rms": 0.025,
+      "vibration_peak": 0.035,
+      "temperature": 24.1,
+      "periodicity": 0.08,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 12,
+      "timestamp": "2026-10-15T14:27:08.323Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 39.4,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.042,
+      "temperature": 24,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 5,
+      "timestamp": "2026-10-15T14:27:08.323Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 37.6,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.044,
+      "temperature": 24,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:27:11.332Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 39,
+      "vibration_rms": 0.025,
+      "vibration_peak": 0.033,
+      "temperature": 24.2,
+      "periodicity": 0.08,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 12,
+      "timestamp": "2026-10-15T14:27:11.332Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 37,
+      "vibration_rms": 0.021,
+      "vibration_peak": 0.029,
+      "temperature": 24.2,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 5,
+      "timestamp": "2026-10-15T14:27:11.332Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 39.1,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.04,
+      "temperature": 23.8,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:27:14.333Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 35.4,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.049,
+      "temperature": 23.9,
+      "periodicity": 0.08,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 12,
+      "timestamp": "2026-10-15T14:27:14.334Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 35.4,
+      "vibration_rms": 0.026,
+      "vibration_peak": 0.035,
+      "temperature": 24.2,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 5,
+      "timestamp": "2026-10-15T14:27:14.334Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 39.6,
+      "vibration_rms": 0.025,
+      "vibration_peak": 0.033,
+      "temperature": 24,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:27:17.335Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 36.2,
+      "vibration_rms": 0.025,
+      "vibration_peak": 0.038,
+      "temperature": 23.9,
+      "periodicity": 0.08,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 12,
+      "timestamp": "2026-10-15T14:27:17.335Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 35.3,
+      "vibration_rms": 0.02,
+      "vibration_peak": 0.03,
+      "temperature": 24.1,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 5,
+      "timestamp": "2026-10-15T14:27:17.335Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 36.9,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.043,
+      "temperature": 24.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:27:20.339Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 36,
+      "vibration_rms": 0.027,
+      "vibration_peak": 0.04,
+      "temperature": 23.9,
+      "periodicity": 0.08,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 12,
+      "timestamp": "2026-10-15T14:27:20.339Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 36.3,
+      "vibration_rms": 0.025,
+      "vibration_peak": 0.039,
+      "temperature": 24,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 5,
+      "timestamp": "2026-10-15T14:27:20.339Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 37.2,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.042,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:27:23.344Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 39.9,
+      "vibration_rms": 0.02,
+      "vibration_peak": 0.027,
+      "temperature": 24.2,
+      "periodicity": 0.08,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 12,
+      "timestamp": "2026-10-15T14:27:23.344Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 37.5,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.041,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 5,
+      "timestamp": "2026-10-15T14:27:23.344Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 35.8,
+      "vibration_rms": 0.03,
+      "vibration_peak": 0.045,
+      "temperature": 24.1,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:27:26.348Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 38.1,
+      "vibration_rms": 0.022,
+      "vibration_peak": 0.035,
+      "temperature": 24,
+      "periodicity": 0.08,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 12,
+      "timestamp": "2026-10-15T14:27:26.348Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 39.9,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.04,
+      "temperature": 24.1,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 5,
+      "timestamp": "2026-10-15T14:27:26.348Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 37.3,
+      "vibration_rms": 0.023,
+      "vibration_peak": 0.03,
+      "temperature": 24,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:27:29.364Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 39.7,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.035,
+      "temperature": 24.1,
+      "periodicity": 0.08,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 12,
+      "timestamp": "2026-10-15T14:27:29.364Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 38.3,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.037,
+      "temperature": 24.2,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 5,
+      "timestamp": "2026-10-15T14:27:29.364Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 39.7,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.039,
+      "temperature": 23.8,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:27:32.376Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 38.5,
+      "vibration_rms": 0.023,
+      "vibration_peak": 0.031,
+      "temperature": 24.1,
+      "periodicity": 0.08,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 12,
+      "timestamp": "2026-10-15T14:27:32.377Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 35,
+      "vibration_rms": 0.021,
+      "vibration_peak": 0.032,
+      "temperature": 24.1,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 5,
+      "timestamp": "2026-10-15T14:27:32.377Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 36.7,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.039,
+      "temperature": 24.1,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:27:35.389Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 36.6,
+      "vibration_rms": 0.022,
+      "vibration_peak": 0.031,
+      "temperature": 23.9,
+      "periodicity": 0.08,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 12,
+      "timestamp": "2026-10-15T14:27:35.389Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 35.1,
+      "vibration_rms": 0.027,
+      "vibration_peak": 0.044,
+      "temperature": 24,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 5,
+      "timestamp": "2026-10-15T14:27:35.389Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "timestamp": "2026-10-15T14:27:36.925Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "timestamp": "2026-10-15T14:27:36.925Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "timestamp": "2026-10-15T14:27:36.925Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "timestamp": "2026-10-15T14:30:50.970Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "timestamp": "2026-10-15T14:30:50.970Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "timestamp": "2026-10-15T14:30:50.970Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 44,
+      "vibration_rms": 0.24,
+      "vibration_peak": 0.35,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 42,
+      "timestamp": "2026-10-15T14:30:53.253Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 46.5,
+      "vibration_rms": 0.28,
+      "vibration_peak": 0.42,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 48,
+      "timestamp": "2026-10-15T14:30:53.253Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 42,
+      "vibration_rms": 0.19,
+      "vibration_peak": 0.29,
+      "temperature": 23.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 35,
+      "timestamp": "2026-10-15T14:30:53.253Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "timestamp": "2026-10-15T14:30:57.266Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "timestamp": "2026-10-15T14:30:57.266Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "timestamp": "2026-10-15T14:30:57.266Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 44,
+      "vibration_rms": 0.24,
+      "vibration_peak": 0.35,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 42,
+      "timestamp": "2026-10-15T14:30:58.143Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 46.5,
+      "vibration_rms": 0.28,
+      "vibration_peak": 0.42,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 48,
+      "timestamp": "2026-10-15T14:30:58.143Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 42,
+      "vibration_rms": 0.19,
+      "vibration_peak": 0.29,
+      "temperature": 23.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 35,
+      "timestamp": "2026-10-15T14:30:58.143Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 64,
+      "vibration_rms": 0.022,
+      "vibration_peak": 0.04,
+      "temperature": 24.3,
+      "periodicity": 0.18,
+      "dominant_bpm": 0,
+      "pattern": "SURVIVOR_VOCALIZATION",
+      "evidence_index": 82,
+      "timestamp": "2026-10-15T14:31:00.044Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 56.5,
+      "vibration_rms": 0.019,
+      "vibration_peak": 0.03,
+      "temperature": 24.1,
+      "periodicity": 0.12,
+      "dominant_bpm": 0,
+      "pattern": "SURVIVOR_VOCALIZATION",
+      "evidence_index": 68,
+      "timestamp": "2026-10-15T14:31:00.044Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 41.2,
+      "vibration_rms": 0.015,
+      "vibration_peak": 0.02,
+      "temperature": 23.4,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 15,
+      "timestamp": "2026-10-15T14:31:00.044Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 35.4,
+      "vibration_rms": 0.021,
+      "vibration_peak": 0.034,
+      "temperature": 24,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 15,
+      "timestamp": "2026-10-15T14:31:00.299Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 39.98985454128183,
+      "vibration_rms": 0.025983579343720926,
+      "vibration_peak": 0.038,
+      "temperature": 24.2,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:31:03.345Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 40.57936774117595,
+      "vibration_rms": 0.03117309711379199,
+      "vibration_peak": 0.044,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T14:31:03.345Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 37.224140230730306,
+      "vibration_rms": 0.021274732913753532,
+      "vibration_peak": 0.032,
+      "temperature": 23.1,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T14:31:03.345Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 35.6,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.045,
+      "temperature": 24,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:31:03.414Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 39,
+      "vibration_rms": 0.021,
+      "vibration_peak": 0.03,
+      "temperature": 24.1,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T14:31:03.414Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 37.2,
+      "vibration_rms": 0.021,
+      "vibration_peak": 0.031,
+      "temperature": 24.1,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T14:31:03.414Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 36.4,
+      "vibration_rms": 0.021,
+      "vibration_peak": 0.031,
+      "temperature": 23.8,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T14:31:06.426Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 37.5,
+      "vibration_rms": 0.03,
+      "vibration_peak": 0.043,
+      "temperature": 24.1,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T14:31:06.426Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 39.7,
+      "vibration_rms": 0.019,
+      "vibration_peak": 0.03,
+      "temperature": 24.2,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T14:31:06.426Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 64,
+      "vibration_rms": 0.022,
+      "vibration_peak": 0.04,
+      "temperature": 24.3,
+      "periodicity": 0.18,
+      "dominant_bpm": 0,
+      "pattern": "SURVIVOR_VOCALIZATION",
+      "evidence_index": 82,
+      "timestamp": "2026-10-15T14:31:09.439Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 56.5,
+      "vibration_rms": 0.019,
+      "vibration_peak": 0.03,
+      "temperature": 24.1,
+      "periodicity": 0.12,
+      "dominant_bpm": 0,
+      "pattern": "SURVIVOR_VOCALIZATION",
+      "evidence_index": 68,
+      "timestamp": "2026-10-15T14:31:09.439Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 41.2,
+      "vibration_rms": 0.015,
+      "vibration_peak": 0.02,
+      "temperature": 23.4,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 15,
+      "timestamp": "2026-10-15T14:31:09.439Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 37.9,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.032,
+      "temperature": 24.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 15,
+      "timestamp": "2026-10-15T14:31:09.523Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 39.1,
+      "vibration_rms": 0.026,
+      "vibration_peak": 0.043,
+      "temperature": 24.1,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 15,
+      "timestamp": "2026-10-15T14:31:12.564Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 36,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.047,
+      "temperature": 23.8,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 15,
+      "timestamp": "2026-10-15T14:31:15.578Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 36.1,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.036,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 15,
+      "timestamp": "2026-10-15T14:31:18.607Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 44,
+      "vibration_rms": 0.24,
+      "vibration_peak": 0.35,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 42,
+      "timestamp": "2026-10-15T14:31:19.125Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 46.5,
+      "vibration_rms": 0.28,
+      "vibration_peak": 0.42,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 48,
+      "timestamp": "2026-10-15T14:31:19.125Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 42,
+      "vibration_rms": 0.19,
+      "vibration_peak": 0.29,
+      "temperature": 23.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 35,
+      "timestamp": "2026-10-15T14:31:19.125Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "timestamp": "2026-10-15T14:31:22.146Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "timestamp": "2026-10-15T14:31:22.146Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "timestamp": "2026-10-15T14:31:22.146Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 44,
+      "vibration_rms": 0.24,
+      "vibration_peak": 0.35,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 42,
+      "timestamp": "2026-10-15T14:31:39.126Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 46.5,
+      "vibration_rms": 0.28,
+      "vibration_peak": 0.42,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 48,
+      "timestamp": "2026-10-15T14:31:39.126Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 42,
+      "vibration_rms": 0.19,
+      "vibration_peak": 0.29,
+      "temperature": 23.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 35,
+      "timestamp": "2026-10-15T14:31:39.126Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "timestamp": "2026-10-15T14:31:41.234Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "timestamp": "2026-10-15T14:31:41.234Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "timestamp": "2026-10-15T14:31:41.234Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 44,
+      "vibration_rms": 0.24,
+      "vibration_peak": 0.35,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 42,
+      "timestamp": "2026-10-15T14:31:54.886Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 46.5,
+      "vibration_rms": 0.28,
+      "vibration_peak": 0.42,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 48,
+      "timestamp": "2026-10-15T14:31:54.886Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 42,
+      "vibration_rms": 0.19,
+      "vibration_peak": 0.29,
+      "temperature": 23.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 35,
+      "timestamp": "2026-10-15T14:31:54.886Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "timestamp": "2026-10-15T14:32:00.838Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "timestamp": "2026-10-15T14:32:00.838Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "timestamp": "2026-10-15T14:32:00.838Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "timestamp": "2026-10-15T14:33:48.890Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "timestamp": "2026-10-15T14:33:48.890Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "timestamp": "2026-10-15T14:33:48.890Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "timestamp": "2026-10-15T14:37:06.279Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "timestamp": "2026-10-15T14:37:06.279Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "timestamp": "2026-10-15T14:37:06.279Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "timestamp": "2026-10-15T15:53:54.598Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "timestamp": "2026-10-15T15:53:54.599Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "timestamp": "2026-10-15T15:53:54.599Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 44,
+      "vibration_rms": 0.24,
+      "vibration_peak": 0.35,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 42,
+      "timestamp": "2026-10-15T15:54:13.946Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 46.5,
+      "vibration_rms": 0.28,
+      "vibration_peak": 0.42,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 48,
+      "timestamp": "2026-10-15T15:54:13.946Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 42,
+      "vibration_rms": 0.19,
+      "vibration_peak": 0.29,
+      "temperature": 23.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 35,
+      "timestamp": "2026-10-15T15:54:13.946Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 39.41497558734785,
+      "vibration_rms": 0.021719560981636087,
+      "vibration_peak": 0.038,
+      "temperature": 24.2,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:54:59.367Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 41.779647271129384,
+      "vibration_rms": 0.031855136195434244,
+      "vibration_peak": 0.044,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:54:59.367Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 39.17810656659259,
+      "vibration_rms": 0.02040756894300738,
+      "vibration_peak": 0.032,
+      "temperature": 23.1,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:54:59.367Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 39.1,
+      "vibration_rms": 0.027,
+      "vibration_peak": 0.039,
+      "temperature": 24.2,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:00.948Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 37.2,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.04,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:00.948Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 35.5,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.038,
+      "temperature": 23.8,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:00.948Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 38.8,
+      "vibration_rms": 0.027,
+      "vibration_peak": 0.041,
+      "temperature": 24.2,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:03.965Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 35.6,
+      "vibration_rms": 0.02,
+      "vibration_peak": 0.026,
+      "temperature": 24.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:03.965Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 35.2,
+      "vibration_rms": 0.023,
+      "vibration_peak": 0.037,
+      "temperature": 24,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:03.965Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 39.1,
+      "vibration_rms": 0.027,
+      "vibration_peak": 0.043,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:06.976Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 36.5,
+      "vibration_rms": 0.027,
+      "vibration_peak": 0.043,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:06.976Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 38.2,
+      "vibration_rms": 0.025,
+      "vibration_peak": 0.035,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:06.976Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 38.5,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.049,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:09.986Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 39.4,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.041,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:09.986Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 37.8,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.035,
+      "temperature": 23.8,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:09.986Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 36.8,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.038,
+      "temperature": 23.8,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:12.994Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 38.8,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.041,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:12.994Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 35,
+      "vibration_rms": 0.022,
+      "vibration_peak": 0.03,
+      "temperature": 24.1,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:12.994Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 39.8,
+      "vibration_rms": 0.02,
+      "vibration_peak": 0.031,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:16.008Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 37.2,
+      "vibration_rms": 0.023,
+      "vibration_peak": 0.034,
+      "temperature": 24.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:16.008Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 37,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.047,
+      "temperature": 24,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:16.008Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 38.5,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.044,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:19.009Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 39.2,
+      "vibration_rms": 0.023,
+      "vibration_peak": 0.032,
+      "temperature": 23.8,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:19.009Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 39.1,
+      "vibration_rms": 0.019,
+      "vibration_peak": 0.03,
+      "temperature": 24.1,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:19.009Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 35.7,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.039,
+      "temperature": 23.8,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:22.014Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 36.8,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.039,
+      "temperature": 24.1,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:22.014Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 36.1,
+      "vibration_rms": 0.022,
+      "vibration_peak": 0.033,
+      "temperature": 24.1,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:22.014Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 36.2,
+      "vibration_rms": 0.022,
+      "vibration_peak": 0.032,
+      "temperature": 23.9,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:25.014Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 35.7,
+      "vibration_rms": 0.019,
+      "vibration_peak": 0.028,
+      "temperature": 24.1,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:25.014Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 39.1,
+      "vibration_rms": 0.021,
+      "vibration_peak": 0.034,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:25.014Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 38.6,
+      "vibration_rms": 0.022,
+      "vibration_peak": 0.032,
+      "temperature": 23.9,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:28.016Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 37.8,
+      "vibration_rms": 0.026,
+      "vibration_peak": 0.034,
+      "temperature": 23.8,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:28.016Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 40,
+      "vibration_rms": 0.019,
+      "vibration_peak": 0.028,
+      "temperature": 24,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:28.016Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 39.8,
+      "vibration_rms": 0.019,
+      "vibration_peak": 0.029,
+      "temperature": 24.2,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:31.028Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 36.3,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.045,
+      "temperature": 23.8,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:31.028Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 38.8,
+      "vibration_rms": 0.022,
+      "vibration_peak": 0.03,
+      "temperature": 24,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:31.028Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 35.4,
+      "vibration_rms": 0.02,
+      "vibration_peak": 0.031,
+      "temperature": 24.2,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:34.033Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 36.3,
+      "vibration_rms": 0.02,
+      "vibration_peak": 0.029,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:34.035Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 37,
+      "vibration_rms": 0.021,
+      "vibration_peak": 0.036,
+      "temperature": 24.1,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:34.035Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 35.5,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.047,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:37.046Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 38.5,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.035,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:37.046Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 39.6,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.038,
+      "temperature": 24,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:37.046Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 35.6,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.037,
+      "temperature": 23.9,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:40.045Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 36.4,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.04,
+      "temperature": 24,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:40.045Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 39.8,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.046,
+      "temperature": 23.8,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:40.045Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 38.6,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.041,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:43.060Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 35.5,
+      "vibration_rms": 0.025,
+      "vibration_peak": 0.039,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:43.060Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 35.8,
+      "vibration_rms": 0.021,
+      "vibration_peak": 0.035,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:43.060Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 36.5,
+      "vibration_rms": 0.023,
+      "vibration_peak": 0.037,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:46.061Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 36,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.039,
+      "temperature": 24.1,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:46.061Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 35.3,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.039,
+      "temperature": 23.8,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:46.061Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 35.6,
+      "vibration_rms": 0.027,
+      "vibration_peak": 0.037,
+      "temperature": 23.9,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:49.062Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 38.2,
+      "vibration_rms": 0.019,
+      "vibration_peak": 0.029,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:49.062Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 39.1,
+      "vibration_rms": 0.021,
+      "vibration_peak": 0.033,
+      "temperature": 24.2,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:49.062Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 36.2,
+      "vibration_rms": 0.026,
+      "vibration_peak": 0.036,
+      "temperature": 23.8,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:52.068Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 36.6,
+      "vibration_rms": 0.023,
+      "vibration_peak": 0.038,
+      "temperature": 23.8,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:52.068Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 38.6,
+      "vibration_rms": 0.029,
+      "vibration_peak": 0.043,
+      "temperature": 23.8,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:52.068Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 37.7,
+      "vibration_rms": 0.03,
+      "vibration_peak": 0.043,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:55.105Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 37.7,
+      "vibration_rms": 0.026,
+      "vibration_peak": 0.043,
+      "temperature": 23.8,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:55.105Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 38.5,
+      "vibration_rms": 0.026,
+      "vibration_peak": 0.042,
+      "temperature": 24.2,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:55.105Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 35.7,
+      "vibration_rms": 0.025,
+      "vibration_peak": 0.038,
+      "temperature": 24.2,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T15:55:58.125Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 38,
+      "vibration_rms": 0.024,
+      "vibration_peak": 0.037,
+      "temperature": 24.1,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T15:55:58.125Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 36.7,
+      "vibration_rms": 0.02,
+      "vibration_peak": 0.032,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T15:55:58.125Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "timestamp": "2026-10-15T15:55:59.195Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "timestamp": "2026-10-15T15:55:59.195Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "timestamp": "2026-10-15T15:55:59.195Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "timestamp": "2026-10-15T16:01:34.001Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "timestamp": "2026-10-15T16:01:34.001Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "timestamp": "2026-10-15T16:01:34.001Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 39.469553671068226,
+      "vibration_rms": 0.024093809912433237,
+      "vibration_peak": 0.038,
+      "temperature": 24.2,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T16:01:35.768Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 42.66458380133053,
+      "vibration_rms": 0.031871874252943966,
+      "vibration_peak": 0.044,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T16:01:35.768Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 36.899693550120276,
+      "vibration_rms": 0.021176540489655615,
+      "vibration_peak": 0.032,
+      "temperature": 23.1,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T16:01:35.768Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "timestamp": "2026-10-15T16:01:37.658Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "timestamp": "2026-10-15T16:01:37.658Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "timestamp": "2026-10-15T16:01:37.658Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 44,
+      "vibration_rms": 0.24,
+      "vibration_peak": 0.35,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 42,
+      "timestamp": "2026-10-15T16:01:48.902Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 46.5,
+      "vibration_rms": 0.28,
+      "vibration_peak": 0.42,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 48,
+      "timestamp": "2026-10-15T16:01:48.902Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 42,
+      "vibration_rms": 0.19,
+      "vibration_peak": 0.29,
+      "temperature": 23.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 35,
+      "timestamp": "2026-10-15T16:01:48.902Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "timestamp": "2026-10-15T16:01:52.267Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "timestamp": "2026-10-15T16:01:52.267Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "timestamp": "2026-10-15T16:01:52.267Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 40.72873579331626,
+      "vibration_rms": 0.023775031296992415,
+      "vibration_peak": 0.038,
+      "temperature": 24.2,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T16:34:25.050Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 41.790657669587034,
+      "vibration_rms": 0.029823568601797835,
+      "vibration_peak": 0.044,
+      "temperature": 23.9,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T16:34:25.050Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 36.790838368075036,
+      "vibration_rms": 0.02360381586171964,
+      "vibration_peak": 0.032,
+      "temperature": 23.1,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T16:34:25.050Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 39.5,
+      "vibration_rms": 0.023,
+      "vibration_peak": 0.037,
+      "temperature": 24,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T16:34:26.233Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 37.1,
+      "vibration_rms": 0.022,
+      "vibration_peak": 0.035,
+      "temperature": 24.1,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T16:34:26.233Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 38.6,
+      "vibration_rms": 0.023,
+      "vibration_peak": 0.036,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T16:34:26.233Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 39.5,
+      "vibration_rms": 0.023,
+      "vibration_peak": 0.032,
+      "temperature": 23.9,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "timestamp": "2026-10-15T16:34:29.295Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 39.6,
+      "vibration_rms": 0.02,
+      "vibration_peak": 0.028,
+      "temperature": 24,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "timestamp": "2026-10-15T16:34:29.295Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 36.6,
+      "vibration_rms": 0.027,
+      "vibration_peak": 0.038,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "timestamp": "2026-10-15T16:34:29.295Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 64,
+      "vibration_rms": 0.022,
+      "vibration_peak": 0.04,
+      "temperature": 24.3,
+      "periodicity": 0.18,
+      "dominant_bpm": 0,
+      "pattern": "SURVIVOR_VOCALIZATION",
+      "evidence_index": 82,
+      "timestamp": "2026-10-15T16:34:31.508Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 56.5,
+      "vibration_rms": 0.019,
+      "vibration_peak": 0.03,
+      "temperature": 24.1,
+      "periodicity": 0.12,
+      "dominant_bpm": 0,
+      "pattern": "SURVIVOR_VOCALIZATION",
+      "evidence_index": 68,
+      "timestamp": "2026-10-15T16:34:31.508Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 41.2,
+      "vibration_rms": 0.015,
+      "vibration_peak": 0.02,
+      "temperature": 23.4,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 15,
+      "timestamp": "2026-10-15T16:34:31.508Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 35.8,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.047,
+      "temperature": 23.8,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 15,
+      "timestamp": "2026-10-15T16:34:32.406Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 44,
+      "vibration_rms": 0.24,
+      "vibration_peak": 0.35,
+      "temperature": 24.1,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 42,
+      "timestamp": "2026-10-15T16:34:34.766Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 46.5,
+      "vibration_rms": 0.28,
+      "vibration_peak": 0.42,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 48,
+      "timestamp": "2026-10-15T16:34:34.766Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 42,
+      "vibration_rms": 0.19,
+      "vibration_peak": 0.29,
+      "temperature": 23.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "STRUCTURAL_SETTLING",
+      "evidence_index": 35,
+      "timestamp": "2026-10-15T16:34:34.766Z"
+    },
+    {
+      "node_id": "node-alpha",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "timestamp": "2026-10-15T16:34:37.884Z"
+    },
+    {
+      "node_id": "node-bravo",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "timestamp": "2026-10-15T16:34:37.884Z"
+    },
+    {
+      "node_id": "node-charlie",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "timestamp": "2026-10-15T16:34:37.884Z"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "alt-1792091102655",
+      "timestamp": "2026-10-15T19:05:02.655Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B2",
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "evidence_score": 95,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 0.8,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m)."
+    },
+    {
+      "id": "alt-1792091100478",
+      "timestamp": "2026-10-15T19:05:00.478Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B2",
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "evidence_score": 95,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 0.8,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m)."
+    },
+    {
+      "id": "alt-1792090160794",
+      "timestamp": "2026-10-15T18:49:20.794Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B2",
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "evidence_score": 95,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 0.8,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m)."
+    },
+    {
+      "id": "alt-1792089908132",
+      "timestamp": "2026-10-15T18:45:08.132Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B2",
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "evidence_score": 95,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 0.8,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m)."
+    },
+    {
+      "id": "alt-1792082071598",
+      "timestamp": "2026-10-15T16:34:31.598Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B2",
+      "coordinates": {
+        "x": 26.8,
+        "y": 38
+      },
+      "evidence_score": 83,
+      "detected_pattern": "SURVIVOR_VOCALIZATION",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (2 nodes confirmed)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo"
+      ],
+      "estimated_depth_m": 1.1,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (26.8m, 38m)."
+    },
+    {
+      "id": "alt-1792080082576",
+      "timestamp": "2026-10-15T16:01:22.576Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B2",
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "evidence_score": 95,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 0.8,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m)."
+    },
+    {
+      "id": "alt-1792079816385",
+      "timestamp": "2026-10-15T15:56:56.385Z",
+      "status": "DISPATCHED_SAR",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "notes": "SAR Team 4 En Route",
+      "reviewed_by": "Commander Alex Vance",
+      "reviewed_at": "2026-10-15T15:57:24.322Z"
+    },
+    {
+      "id": "alt-1792079759606",
+      "timestamp": "2026-10-15T15:55:59.606Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m)."
+    },
+    {
+      "id": "alt-1792079634627",
+      "timestamp": "2026-10-15T15:53:54.627Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m)."
+    },
+    {
+      "id": "alt-1792075575284",
+      "timestamp": "2026-10-15T14:46:15.284Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m)."
+    },
+    {
+      "id": "alt-1792075026298",
+      "timestamp": "2026-10-15T14:37:06.298Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector C2",
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "evidence_score": 95,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 0.8,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector C2 immediately at (27.9m, 33.9m)."
+    },
+    {
+      "id": "alt-1792074828924",
+      "timestamp": "2026-10-15T14:33:48.924Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector C2",
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "evidence_score": 95,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 0.8,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector C2 immediately at (27.9m, 33.9m)."
+    },
+    {
+      "id": "alt-1792074701254",
+      "timestamp": "2026-10-15T14:31:41.254Z",
+      "status": "CONFIRMED_SURVIVOR",
+      "priority_level": "CRITICAL",
+      "sector": "Sector C2",
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "evidence_score": 95,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 0.8,
+      "notes": "",
+      "reviewed_by": "Commander Alex Vance (SAR Taskforce 1)",
+      "reviewed_at": "2026-10-15T14:32:24.936Z"
+    },
+    {
+      "id": "alt-1792074651874",
+      "timestamp": "2026-10-15T14:30:51.874Z",
+      "status": "INVESTIGATING",
+      "priority_level": "CRITICAL",
+      "sector": "Sector C2",
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "evidence_score": 95,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 0.8,
+      "notes": "ddgfgyftrerrruyutyutyrtreetrytuuytyu",
+      "reviewed_by": "Commander Alex Vance (SAR Taskforce 1)",
+      "reviewed_at": "2026-10-15T14:33:21.612Z"
+    },
+    {
+      "id": "alt-init-01",
+      "timestamp": "2026-10-15T13:54:42.482Z",
+      "priority_level": "ELEVATED",
+      "sector": "Sector B2",
+      "coordinates": {
+        "x": 26.5,
+        "y": 38
+      },
+      "evidence_score": 78,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (2 nodes in consensus)",
+      "status": "PENDING_REVIEW",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo"
+      ],
+      "estimated_depth_m": 1.4,
+      "notes": "Awaiting SAR listening team confirmation. Correlated vibration confirmed.",
+      "reviewed_by": null
+    }
+  ],
+  "incidents": [
+    {
+      "id": "inc-001",
+      "title": "Commercial Complex Sector Collapse",
+      "site_name": "Building 4 Rubble Zone",
+      "created_at": "2026-10-15T12:09:42.482Z",
+      "status": "ACTIVE",
+      "active_nodes": 3,
+      "total_alerts": 1,
+      "unresolved_alerts": 1
+    }
+  ],
+  "fusion_state": {
+    "priority_level": "CRITICAL",
+    "target_sector": "Sector B2",
+    "estimated_coords": {
+      "x": 27.9,
+      "y": 33.9
+    },
+    "estimated_depth_m": 0.8,
+    "evidence_score": 95,
+    "correlation_score": 0.96,
+    "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
+    "num_elevated_nodes": 3,
+    "recommended_action": "PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m).",
+    "heatmap": [
+      {
+        "x": 12,
+        "y": 0,
+        "intensity": 5
+      },
+      {
+        "x": 16,
+        "y": 0,
+        "intensity": 6
+      },
+      {
+        "x": 20,
+        "y": 0,
+        "intensity": 7
+      },
+      {
+        "x": 24,
+        "y": 0,
+        "intensity": 7
+      },
+      {
+        "x": 28,
+        "y": 0,
+        "intensity": 7
+      },
+      {
+        "x": 32,
+        "y": 0,
+        "intensity": 6
+      },
+      {
+        "x": 36,
+        "y": 0,
+        "intensity": 6
+      },
+      {
+        "x": 40,
+        "y": 0,
+        "intensity": 5
+      },
+      {
+        "x": 8,
+        "y": 4,
+        "intensity": 5
+      },
+      {
+        "x": 12,
+        "y": 4,
+        "intensity": 6
+      },
+      {
+        "x": 16,
+        "y": 4,
+        "intensity": 8
+      },
+      {
+        "x": 20,
+        "y": 4,
+        "intensity": 9
+      },
+      {
+        "x": 24,
+        "y": 4,
+        "intensity": 10
+      },
+      {
+        "x": 28,
+        "y": 4,
+        "intensity": 10
+      },
+      {
+        "x": 32,
+        "y": 4,
+        "intensity": 9
+      },
+      {
+        "x": 36,
+        "y": 4,
+        "intensity": 7
+      },
+      {
+        "x": 40,
+        "y": 4,
+        "intensity": 6
+      },
+      {
+        "x": 44,
+        "y": 4,
+        "intensity": 5
+      },
+      {
+        "x": 8,
+        "y": 8,
+        "intensity": 6
+      },
+      {
+        "x": 12,
+        "y": 8,
+        "intensity": 8
+      },
+      {
+        "x": 16,
+        "y": 8,
+        "intensity": 10
+      },
+      {
+        "x": 20,
+        "y": 8,
+        "intensity": 14
+      },
+      {
+        "x": 24,
+        "y": 8,
+        "intensity": 18
+      },
+      {
+        "x": 28,
+        "y": 8,
+        "intensity": 16
+      },
+      {
+        "x": 32,
+        "y": 8,
+        "intensity": 12
+      },
+      {
+        "x": 36,
+        "y": 8,
+        "intensity": 9
+      },
+      {
+        "x": 40,
+        "y": 8,
+        "intensity": 8
+      },
+      {
+        "x": 44,
+        "y": 8,
+        "intensity": 6
+      },
+      {
+        "x": 48,
+        "y": 8,
+        "intensity": 5
+      },
+      {
+        "x": 4,
+        "y": 12,
+        "intensity": 5
+      },
+      {
+        "x": 8,
+        "y": 12,
+        "intensity": 7
+      },
+      {
+        "x": 12,
+        "y": 12,
+        "intensity": 9
+      },
+      {
+        "x": 16,
+        "y": 12,
+        "intensity": 13
+      },
+      {
+        "x": 20,
+        "y": 12,
+        "intensity": 22
+      },
+      {
+        "x": 24,
+        "y": 12,
+        "intensity": 43
+      },
+      {
+        "x": 28,
+        "y": 12,
+        "intensity": 32
+      },
+      {
+        "x": 32,
+        "y": 12,
+        "intensity": 17
+      },
+      {
+        "x": 36,
+        "y": 12,
+        "intensity": 12
+      },
+      {
+        "x": 40,
+        "y": 12,
+        "intensity": 9
+      },
+      {
+        "x": 44,
+        "y": 12,
+        "intensity": 7
+      },
+      {
+        "x": 48,
+        "y": 12,
+        "intensity": 6
+      },
+      {
+        "x": 52,
+        "y": 12,
+        "intensity": 5
+      },
+      {
+        "x": 4,
+        "y": 16,
+        "intensity": 6
+      },
+      {
+        "x": 8,
+        "y": 16,
+        "intensity": 7
+      },
+      {
+        "x": 12,
+        "y": 16,
+        "intensity": 10
+      },
+      {
+        "x": 16,
+        "y": 16,
+        "intensity": 14
+      },
+      {
+        "x": 20,
+        "y": 16,
+        "intensity": 27
+      },
+      {
+        "x": 24,
+        "y": 16,
+        "intensity": 87
+      },
+      {
+        "x": 28,
+        "y": 16,
+        "intensity": 45
+      },
+      {
+        "x": 32,
+        "y": 16,
+        "intensity": 20
+      },
+      {
+        "x": 36,
+        "y": 16,
+        "intensity": 14
+      },
+      {
+        "x": 40,
+        "y": 16,
+        "intensity": 11
+      },
+      {
+        "x": 44,
+        "y": 16,
+        "intensity": 9
+      },
+      {
+        "x": 48,
+        "y": 16,
+        "intensity": 7
+      },
+      {
+        "x": 52,
+        "y": 16,
+        "intensity": 6
+      },
+      {
+        "x": 56,
+        "y": 16,
+        "intensity": 5
+      },
+      {
+        "x": 0,
+        "y": 20,
+        "intensity": 5
+      },
+      {
+        "x": 4,
+        "y": 20,
+        "intensity": 6
+      },
+      {
+        "x": 8,
+        "y": 20,
+        "intensity": 8
+      },
+      {
+        "x": 12,
+        "y": 20,
+        "intensity": 10
+      },
+      {
+        "x": 16,
+        "y": 20,
+        "intensity": 14
+      },
+      {
+        "x": 20,
+        "y": 20,
+        "intensity": 20
+      },
+      {
+        "x": 24,
+        "y": 20,
+        "intensity": 29
+      },
+      {
+        "x": 28,
+        "y": 20,
+        "intensity": 26
+      },
+      {
+        "x": 32,
+        "y": 20,
+        "intensity": 19
+      },
+      {
+        "x": 36,
+        "y": 20,
+        "intensity": 15
+      },
+      {
+        "x": 40,
+        "y": 20,
+        "intensity": 13
+      },
+      {
+        "x": 44,
+        "y": 20,
+        "intensity": 11
+      },
+      {
+        "x": 48,
+        "y": 20,
+        "intensity": 9
+      },
+      {
+        "x": 52,
+        "y": 20,
+        "intensity": 7
+      },
+      {
+        "x": 56,
+        "y": 20,
+        "intensity": 6
+      },
+      {
+        "x": 0,
+        "y": 24,
+        "intensity": 5
+      },
+      {
+        "x": 4,
+        "y": 24,
+        "intensity": 7
+      },
+      {
+        "x": 8,
+        "y": 24,
+        "intensity": 8
+      },
+      {
+        "x": 12,
+        "y": 24,
+        "intensity": 10
+      },
+      {
+        "x": 16,
+        "y": 24,
+        "intensity": 13
+      },
+      {
+        "x": 20,
+        "y": 24,
+        "intensity": 16
+      },
+      {
+        "x": 24,
+        "y": 24,
+        "intensity": 18
+      },
+      {
+        "x": 28,
+        "y": 24,
+        "intensity": 19
+      },
+      {
+        "x": 32,
+        "y": 24,
+        "intensity": 19
+      },
+      {
+        "x": 36,
+        "y": 24,
+        "intensity": 18
+      },
+      {
+        "x": 40,
+        "y": 24,
+        "intensity": 16
+      },
+      {
+        "x": 44,
+        "y": 24,
+        "intensity": 13
+      },
+      {
+        "x": 48,
+        "y": 24,
+        "intensity": 10
+      },
+      {
+        "x": 52,
+        "y": 24,
+        "intensity": 8
+      },
+      {
+        "x": 56,
+        "y": 24,
+        "intensity": 6
+      },
+      {
+        "x": 60,
+        "y": 24,
+        "intensity": 5
+      },
+      {
+        "x": 0,
+        "y": 28,
+        "intensity": 6
+      },
+      {
+        "x": 4,
+        "y": 28,
+        "intensity": 7
+      },
+      {
+        "x": 8,
+        "y": 28,
+        "intensity": 9
+      },
+      {
+        "x": 12,
+        "y": 28,
+        "intensity": 11
+      },
+      {
+        "x": 16,
+        "y": 28,
+        "intensity": 13
+      },
+      {
+        "x": 20,
+        "y": 28,
+        "intensity": 15
+      },
+      {
+        "x": 24,
+        "y": 28,
+        "intensity": 17
+      },
+      {
+        "x": 28,
+        "y": 28,
+        "intensity": 19
+      },
+      {
+        "x": 32,
+        "y": 28,
+        "intensity": 23
+      },
+      {
+        "x": 36,
+        "y": 28,
+        "intensity": 27
+      },
+      {
+        "x": 40,
+        "y": 28,
+        "intensity": 26
+      },
+      {
+        "x": 44,
+        "y": 28,
+        "intensity": 19
+      },
+      {
+        "x": 48,
+        "y": 28,
+        "intensity": 13
+      },
+      {
+        "x": 52,
+        "y": 28,
+        "intensity": 9
+      },
+      {
+        "x": 56,
+        "y": 28,
+        "intensity": 7
+      },
+      {
+        "x": 60,
+        "y": 28,
+        "intensity": 5
+      },
+      {
+        "x": 0,
+        "y": 32,
+        "intensity": 6
+      },
+      {
+        "x": 4,
+        "y": 32,
+        "intensity": 8
+      },
+      {
+        "x": 8,
+        "y": 32,
+        "intensity": 10
+      },
+      {
+        "x": 12,
+        "y": 32,
+        "intensity": 12
+      },
+      {
+        "x": 16,
+        "y": 32,
+        "intensity": 14
+      },
+      {
+        "x": 20,
+        "y": 32,
+        "intensity": 16
+      },
+      {
+        "x": 24,
+        "y": 32,
+        "intensity": 18
+      },
+      {
+        "x": 28,
+        "y": 32,
+        "intensity": 21
+      },
+      {
+        "x": 32,
+        "y": 32,
+        "intensity": 30
+      },
+      {
+        "x": 36,
+        "y": 32,
+        "intensity": 57
+      },
+      {
+        "x": 40,
+        "y": 32,
+        "intensity": 56
+      },
+      {
+        "x": 44,
+        "y": 32,
+        "intensity": 27
+      },
+      {
+        "x": 48,
+        "y": 32,
+        "intensity": 15
+      },
+      {
+        "x": 52,
+        "y": 32,
+        "intensity": 10
+      },
+      {
+        "x": 56,
+        "y": 32,
+        "intensity": 7
+      },
+      {
+        "x": 60,
+        "y": 32,
+        "intensity": 6
+      },
+      {
+        "x": 0,
+        "y": 36,
+        "intensity": 7
+      },
+      {
+        "x": 4,
+        "y": 36,
+        "intensity": 9
+      },
+      {
+        "x": 8,
+        "y": 36,
+        "intensity": 11
+      },
+      {
+        "x": 12,
+        "y": 36,
+        "intensity": 15
+      },
+      {
+        "x": 16,
+        "y": 36,
+        "intensity": 19
+      },
+      {
+        "x": 20,
+        "y": 36,
+        "intensity": 21
+      },
+      {
+        "x": 24,
+        "y": 36,
+        "intensity": 21
+      },
+      {
+        "x": 28,
+        "y": 36,
+        "intensity": 23
+      },
+      {
+        "x": 32,
+        "y": 36,
+        "intensity": 34
+      },
+      {
+        "x": 36,
+        "y": 36,
+        "intensity": 90
+      },
+      {
+        "x": 40,
+        "y": 36,
+        "intensity": 89
+      },
+      {
+        "x": 44,
+        "y": 36,
+        "intensity": 30
+      },
+      {
+        "x": 48,
+        "y": 36,
+        "intensity": 16
+      },
+      {
+        "x": 52,
+        "y": 36,
+        "intensity": 10
+      },
+      {
+        "x": 56,
+        "y": 36,
+        "intensity": 7
+      },
+      {
+        "x": 60,
+        "y": 36,
+        "intensity": 6
+      },
+      {
+        "x": 0,
+        "y": 40,
+        "intensity": 7
+      },
+      {
+        "x": 4,
+        "y": 40,
+        "intensity": 9
+      },
+      {
+        "x": 8,
+        "y": 40,
+        "intensity": 14
+      },
+      {
+        "x": 12,
+        "y": 40,
+        "intensity": 21
+      },
+      {
+        "x": 16,
+        "y": 40,
+        "intensity": 34
+      },
+      {
+        "x": 20,
+        "y": 40,
+        "intensity": 35
+      },
+      {
+        "x": 24,
+        "y": 40,
+        "intensity": 26
+      },
+      {
+        "x": 28,
+        "y": 40,
+        "intensity": 23
+      },
+      {
+        "x": 32,
+        "y": 40,
+        "intensity": 27
+      },
+      {
+        "x": 36,
+        "y": 40,
+        "intensity": 37
+      },
+      {
+        "x": 40,
+        "y": 40,
+        "intensity": 36
+      },
+      {
+        "x": 44,
+        "y": 40,
+        "intensity": 22
+      },
+      {
+        "x": 48,
+        "y": 40,
+        "intensity": 14
+      },
+      {
+        "x": 52,
+        "y": 40,
+        "intensity": 10
+      },
+      {
+        "x": 56,
+        "y": 40,
+        "intensity": 7
+      },
+      {
+        "x": 60,
+        "y": 40,
+        "intensity": 5
+      },
+      {
+        "x": 0,
+        "y": 44,
+        "intensity": 7
+      },
+      {
+        "x": 4,
+        "y": 44,
+        "intensity": 10
+      },
+      {
+        "x": 8,
+        "y": 44,
+        "intensity": 15
+      },
+      {
+        "x": 12,
+        "y": 44,
+        "intensity": 28
+      },
+      {
+        "x": 16,
+        "y": 44,
+        "intensity": 81
+      },
+      {
+        "x": 20,
+        "y": 44,
+        "intensity": 83
+      },
+      {
+        "x": 24,
+        "y": 44,
+        "intensity": 31
+      },
+      {
+        "x": 28,
+        "y": 44,
+        "intensity": 21
+      },
+      {
+        "x": 32,
+        "y": 44,
+        "intensity": 20
+      },
+      {
+        "x": 36,
+        "y": 44,
+        "intensity": 21
+      },
+      {
+        "x": 40,
+        "y": 44,
+        "intensity": 19
+      },
+      {
+        "x": 44,
+        "y": 44,
+        "intensity": 15
+      },
+      {
+        "x": 48,
+        "y": 44,
+        "intensity": 11
+      },
+      {
+        "x": 52,
+        "y": 44,
+        "intensity": 8
+      },
+      {
+        "x": 56,
+        "y": 44,
+        "intensity": 6
+      },
+      {
+        "x": 60,
+        "y": 44,
+        "intensity": 5
+      },
+      {
+        "x": 0,
+        "y": 48,
+        "intensity": 7
+      },
+      {
+        "x": 4,
+        "y": 48,
+        "intensity": 9
+      },
+      {
+        "x": 8,
+        "y": 48,
+        "intensity": 14
+      },
+      {
+        "x": 12,
+        "y": 48,
+        "intensity": 24
+      },
+      {
+        "x": 16,
+        "y": 48,
+        "intensity": 50
+      },
+      {
+        "x": 20,
+        "y": 48,
+        "intensity": 51
+      },
+      {
+        "x": 24,
+        "y": 48,
+        "intensity": 27
+      },
+      {
+        "x": 28,
+        "y": 48,
+        "intensity": 18
+      },
+      {
+        "x": 32,
+        "y": 48,
+        "intensity": 15
+      },
+      {
+        "x": 36,
+        "y": 48,
+        "intensity": 14
+      },
+      {
+        "x": 40,
+        "y": 48,
+        "intensity": 13
+      },
+      {
+        "x": 44,
+        "y": 48,
+        "intensity": 11
+      },
+      {
+        "x": 48,
+        "y": 48,
+        "intensity": 9
+      },
+      {
+        "x": 52,
+        "y": 48,
+        "intensity": 7
+      },
+      {
+        "x": 56,
+        "y": 48,
+        "intensity": 6
+      },
+      {
+        "x": 0,
+        "y": 52,
+        "intensity": 6
+      },
+      {
+        "x": 4,
+        "y": 52,
+        "intensity": 8
+      },
+      {
+        "x": 8,
+        "y": 52,
+        "intensity": 11
+      },
+      {
+        "x": 12,
+        "y": 52,
+        "intensity": 16
+      },
+      {
+        "x": 16,
+        "y": 52,
+        "intensity": 22
+      },
+      {
+        "x": 20,
+        "y": 52,
+        "intensity": 23
+      },
+      {
+        "x": 24,
+        "y": 52,
+        "intensity": 18
+      },
+      {
+        "x": 28,
+        "y": 52,
+        "intensity": 14
+      },
+      {
+        "x": 32,
+        "y": 52,
+        "intensity": 12
+      },
+      {
+        "x": 36,
+        "y": 52,
+        "intensity": 11
+      },
+      {
+        "x": 40,
+        "y": 52,
+        "intensity": 10
+      },
+      {
+        "x": 44,
+        "y": 52,
+        "intensity": 8
+      },
+      {
+        "x": 48,
+        "y": 52,
+        "intensity": 7
+      },
+      {
+        "x": 52,
+        "y": 52,
+        "intensity": 6
+      },
+      {
+        "x": 0,
+        "y": 56,
+        "intensity": 5
+      },
+      {
+        "x": 4,
+        "y": 56,
+        "intensity": 7
+      },
+      {
+        "x": 8,
+        "y": 56,
+        "intensity": 9
+      },
+      {
+        "x": 12,
+        "y": 56,
+        "intensity": 11
+      },
+      {
+        "x": 16,
+        "y": 56,
+        "intensity": 13
+      },
+      {
+        "x": 20,
+        "y": 56,
+        "intensity": 13
+      },
+      {
+        "x": 24,
+        "y": 56,
+        "intensity": 12
+      },
+      {
+        "x": 28,
+        "y": 56,
+        "intensity": 11
+      },
+      {
+        "x": 32,
+        "y": 56,
+        "intensity": 9
+      },
+      {
+        "x": 36,
+        "y": 56,
+        "intensity": 8
+      },
+      {
+        "x": 40,
+        "y": 56,
+        "intensity": 8
+      },
+      {
+        "x": 44,
+        "y": 56,
+        "intensity": 7
+      },
+      {
+        "x": 48,
+        "y": 56,
+        "intensity": 6
+      },
+      {
+        "x": 52,
+        "y": 56,
+        "intensity": 5
+      },
+      {
+        "x": 4,
+        "y": 60,
+        "intensity": 6
+      },
+      {
+        "x": 8,
+        "y": 60,
+        "intensity": 7
+      },
+      {
+        "x": 12,
+        "y": 60,
+        "intensity": 8
+      },
+      {
+        "x": 16,
+        "y": 60,
+        "intensity": 9
+      },
+      {
+        "x": 20,
+        "y": 60,
+        "intensity": 9
+      },
+      {
+        "x": 24,
+        "y": 60,
+        "intensity": 9
+      },
+      {
+        "x": 28,
+        "y": 60,
+        "intensity": 8
+      },
+      {
+        "x": 32,
+        "y": 60,
+        "intensity": 7
+      },
+      {
+        "x": 36,
+        "y": 60,
+        "intensity": 7
+      },
+      {
+        "x": 40,
+        "y": 60,
+        "intensity": 6
+      },
+      {
+        "x": 44,
+        "y": 60,
+        "intensity": 5
+      }
+    ]
+  }
+}
