@@ -5,34 +5,67 @@ const fusionEngine = require('../services/fusionEngine');
 
 // POST /api/telemetry - Receive sensor payload from ESP32 or simulator
 router.post('/', async (req, res) => {
-  const {
-    node_id,
-    audio_level,
-    vibration_rms,
-    vibration_peak,
-    temperature,
-    periodicity,
-    dominant_bpm,
-    battery,
-    signal_rssi
-  } = req.body;
+  const body = req.body || {};
+  const node_id = body.node_id || body.nodeId || "RM-NODE-01";
 
-  if (!node_id) {
-    return res.status(400).json({ success: false, error: 'node_id is required' });
-  }
-
-  const existingNode = db.getNode(node_id);
+  let existingNode = db.getNode(node_id);
   if (!existingNode) {
-    return res.status(404).json({ success: false, error: `Node ${node_id} is not registered` });
+    existingNode = db.addNode({
+      id: node_id,
+      name: `Sensor Node (${node_id})`,
+      x: +(25.0 + Math.random() * 15.0).toFixed(1),
+      y: +(25.0 + Math.random() * 15.0).toFixed(1),
+      status: "ONLINE",
+      battery: body.battery !== undefined ? Number(body.battery) : 95,
+      signal_rssi: body.signal_rssi !== undefined ? Number(body.signal_rssi) : -58,
+      hardware: "ESP32 (Wokwi MPU6050 + KY038 + MLX90614)"
+    });
   }
 
-  // Calculate local signal pattern & evidence index
-  const soundDb = Number(audio_level) || 35.0;
-  const vibRms = Number(vibration_rms) || 0.02;
-  const vibPeak = Number(vibration_peak) || (vibRms * 1.5);
+  // Calculate audio level: from audio_level or soundAnalog (0-4095)
+  let soundDb = 35.0;
+  if (body.audio_level !== undefined) {
+    soundDb = Number(body.audio_level);
+  } else if (body.soundAnalog !== undefined) {
+    // Convert KY-038 ADC (0 - 4095) to approximate dB (35 dB - 92 dB)
+    const rawMic = Number(body.soundAnalog);
+    soundDb = +(35.0 + (rawMic / 4095.0) * 55.0).toFixed(1);
+    if (body.soundDigital === 1 || body.soundDigital === true) {
+      soundDb = Math.max(soundDb, 72.0);
+    }
+  }
+
+  // Calculate vibration: from vibration_rms or acceleration {x, y, z}
+  let vibRms = 0.02;
+  let vibPeak = 0.035;
+  if (body.vibration_rms !== undefined) {
+    vibRms = Number(body.vibration_rms);
+    vibPeak = Number(body.vibration_peak) || (vibRms * 1.5);
+  } else if (body.acceleration) {
+    const ax = Number(body.acceleration.x) || 0;
+    const ay = Number(body.acceleration.y) || 0;
+    const az = Number(body.acceleration.z) || 0;
+    // Total magnitude minus 9.8 m/s² gravity
+    const mag = Math.sqrt(ax * ax + ay * ay + az * az);
+    const dynG = Math.abs(mag - 9.8) / 9.8; // Convert to Gs
+    vibRms = +(Math.max(0.015, dynG)).toFixed(3);
+    vibPeak = +(vibRms * 1.6).toFixed(3);
+  }
+
+  // Temperature from temperature, objectTemperature or ambientTemperature
+  const temp = Number(body.temperature) || 
+               Number(body.objectTemperature > -50 ? body.objectTemperature : body.ambientTemperature) || 
+               24.0;
+
+  const period = body.periodicity !== undefined 
+    ? Number(body.periodicity) 
+    : (body.soundDigital === 1 || soundDb > 65 ? 0.85 : 0.05);
+
+  const bpm = body.dominant_bpm !== undefined 
+    ? Number(body.dominant_bpm) 
+    : (period > 0.4 ? 104 : 0);
+
   const crestFactor = vibPeak / Math.max(vibRms, 0.001);
-  const period = Number(periodicity) || 0.0;
-  const bpm = Number(dominant_bpm) || 0;
 
   let pattern = "NORMAL_BACKGROUND";
   let evidence = 5;
@@ -60,7 +93,7 @@ router.post('/', async (req, res) => {
     audio_level: soundDb,
     vibration_rms: vibRms,
     vibration_peak: vibPeak,
-    temperature: Number(temperature) || 24.0,
+    temperature: temp,
     periodicity: period,
     dominant_bpm: bpm,
     pattern,
@@ -75,8 +108,8 @@ router.post('/', async (req, res) => {
     latest_telemetry: telemetryReading,
     status: "ONLINE"
   };
-  if (battery !== undefined) nodeUpdate.battery = battery;
-  if (signal_rssi !== undefined) nodeUpdate.signal_rssi = signal_rssi;
+  if (body.battery !== undefined) nodeUpdate.battery = body.battery;
+  if (body.signal_rssi !== undefined) nodeUpdate.signal_rssi = body.signal_rssi;
 
   const updatedNode = db.updateNode(node_id, nodeUpdate);
 

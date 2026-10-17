@@ -1,15 +1,6 @@
 {
   "nodes": [
     {
-      "id": "node-alpha",
-      "name": "Node A (North Rubble Pile)",
-      "x": 18,
-      "y": 45,
-      "status": "ONLINE",
-      "battery": 94,
-      "signal_rssi": -58,
-      "hardware": "ESP32 + MPU6050 + INMP441",
-      "last_seen": "2026-10-17T06:03:18.698Z",
       "latest_telemetry": {
         "audio_level": 68.4,
         "vibration_rms": 0.082,
@@ -19,18 +10,22 @@
         "dominant_bpm": 104,
         "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
         "evidence_index": 86
-      }
+      },
+      "_id": "6ad339cf5f489b2d39bf42ae",
+      "id": "node-alpha",
+      "name": "Node A (North Rubble Pile)",
+      "x": 18,
+      "y": 45,
+      "status": "ONLINE",
+      "battery": 94,
+      "signal_rssi": -58,
+      "hardware": "ESP32 + MPU6050 + INMP441",
+      "last_seen": "2026-10-17T09:46:58.568Z",
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:11.799Z",
+      "updatedAt": "2026-10-17T09:46:58.780Z"
     },
     {
-      "id": "node-bravo",
-      "name": "Node B (East Collapsed Beam)",
-      "x": 38,
-      "y": 35,
-      "status": "ONLINE",
-      "battery": 88,
-      "signal_rssi": -64,
-      "hardware": "ESP32 + MPU6050 + INMP441",
-      "last_seen": "2026-10-17T06:03:18.699Z",
       "latest_telemetry": {
         "audio_level": 74.8,
         "vibration_rms": 0.165,
@@ -40,18 +35,22 @@
         "dominant_bpm": 104,
         "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
         "evidence_index": 94
-      }
+      },
+      "_id": "6ad339cf5f489b2d39bf42af",
+      "id": "node-bravo",
+      "name": "Node B (East Collapsed Beam)",
+      "x": 38,
+      "y": 35,
+      "status": "ONLINE",
+      "battery": 88,
+      "signal_rssi": -64,
+      "hardware": "ESP32 + MPU6050 + INMP441",
+      "last_seen": "2026-10-17T09:46:58.569Z",
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:11.802Z",
+      "updatedAt": "2026-10-17T09:46:58.780Z"
     },
     {
-      "id": "node-charlie",
-      "name": "Node C (South Basement Void)",
-      "x": 25,
-      "y": 15,
-      "status": "ONLINE",
-      "battery": 91,
-      "signal_rssi": -61,
-      "hardware": "ESP32 + MPU6050 + INMP441",
-      "last_seen": "2026-10-17T06:03:18.699Z",
       "latest_telemetry": {
         "audio_level": 51.2,
         "vibration_rms": 0.046,
@@ -61,2532 +60,468 @@
         "dominant_bpm": 104,
         "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
         "evidence_index": 62
-      }
+      },
+      "_id": "6ad339cf5f489b2d39bf42b0",
+      "id": "node-charlie",
+      "name": "Node C (South Basement Void)",
+      "x": 25,
+      "y": 15,
+      "status": "ONLINE",
+      "battery": 91,
+      "signal_rssi": -61,
+      "hardware": "ESP32 + MPU6050 + INMP441",
+      "last_seen": "2026-10-17T09:46:58.569Z",
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:11.802Z",
+      "updatedAt": "2026-10-17T09:46:58.780Z"
+    },
+    {
+      "latest_telemetry": {
+        "audio_level": 58.3,
+        "vibration_rms": 0.015,
+        "vibration_peak": 0.024,
+        "temperature": 36.61,
+        "periodicity": 0.05,
+        "dominant_bpm": 0,
+        "pattern": "SURVIVOR_VOCALIZATION",
+        "evidence_index": 29
+      },
+      "_id": "6ad354c4c2e5bd128b5df63d",
+      "id": "RM-NODE-01",
+      "name": "Sensor Node (RM-NODE-01)",
+      "x": 37.6,
+      "y": 27.4,
+      "status": "ONLINE",
+      "battery": 95,
+      "signal_rssi": -58,
+      "hardware": "ESP32 (Wokwi MPU6050 + KY038 + MLX90614)",
+      "last_seen": "2026-10-17T10:58:12.475Z",
+      "createdAt": "2026-10-17T10:58:12.495Z",
+      "updatedAt": "2026-10-17T10:58:12.480Z",
+      "__v": 0
     }
   ],
   "telemetry_history": [
     {
+      "_id": "6ad33be85834df37615d52e1",
       "node_id": "node-alpha",
-      "audio_level": 36.4,
-      "vibration_rms": 0.025,
-      "vibration_peak": 0.038,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T14:27:02.316Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 39.9,
-      "vibration_rms": 0.02,
-      "vibration_peak": 0.028,
+      "timestamp": "2026-10-17T09:12:08.639Z",
+      "audio_level": 75.2,
+      "vibration_rms": 0.18,
+      "vibration_peak": 0.27,
       "temperature": 24,
-      "periodicity": 0.08,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 12,
-      "timestamp": "2026-10-15T14:27:02.316Z"
+      "periodicity": 0.85,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 82,
+      "createdAt": "2026-10-17T09:12:08.662Z",
+      "updatedAt": "2026-10-17T09:12:08.662Z",
+      "__v": 0
     },
     {
-      "node_id": "node-charlie",
-      "audio_level": 36.3,
-      "vibration_rms": 0.022,
-      "vibration_peak": 0.034,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 5,
-      "timestamp": "2026-10-15T14:27:02.316Z"
-    },
-    {
+      "_id": "6ad33bf0687a2aa5b053055d",
       "node_id": "node-alpha",
-      "audio_level": 37.2,
-      "vibration_rms": 0.028,
-      "vibration_peak": 0.043,
-      "temperature": 24.1,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T14:27:05.320Z"
+      "timestamp": "2026-10-17T09:12:16.528Z",
+      "audio_level": 75.2,
+      "vibration_rms": 0.18,
+      "vibration_peak": 0.27,
+      "temperature": 24,
+      "periodicity": 0.85,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 82,
+      "createdAt": "2026-10-17T09:12:16.547Z",
+      "updatedAt": "2026-10-17T09:12:16.547Z",
+      "__v": 0
     },
     {
-      "node_id": "node-bravo",
-      "audio_level": 39,
-      "vibration_rms": 0.021,
-      "vibration_peak": 0.031,
+      "_id": "6ad33c18687a2aa5b053055e",
+      "node_id": "node-alpha",
+      "timestamp": "2026-10-17T09:12:56.398Z",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
       "temperature": 24.2,
-      "periodicity": 0.08,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 12,
-      "timestamp": "2026-10-15T14:27:05.320Z"
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "createdAt": "2026-10-17T09:12:57.004Z",
+      "updatedAt": "2026-10-17T09:12:57.004Z",
+      "__v": 0
     },
     {
+      "_id": "6ad33c18687a2aa5b053055f",
+      "node_id": "node-bravo",
+      "timestamp": "2026-10-17T09:12:56.488Z",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "createdAt": "2026-10-17T09:12:57.005Z",
+      "updatedAt": "2026-10-17T09:12:57.005Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad33c18687a2aa5b0530560",
       "node_id": "node-charlie",
-      "audio_level": 36.5,
-      "vibration_rms": 0.029,
-      "vibration_peak": 0.048,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 5,
-      "timestamp": "2026-10-15T14:27:05.320Z"
+      "timestamp": "2026-10-17T09:12:56.489Z",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "createdAt": "2026-10-17T09:12:57.005Z",
+      "updatedAt": "2026-10-17T09:12:57.005Z",
+      "__v": 0
     },
     {
+      "_id": "6ad33c1c687a2aa5b0530562",
       "node_id": "node-alpha",
-      "audio_level": 39.1,
-      "vibration_rms": 0.028,
+      "timestamp": "2026-10-17T09:13:00.169Z",
+      "audio_level": 39.397776130154135,
+      "vibration_rms": 0.02141125599077584,
       "vibration_peak": 0.038,
       "temperature": 24.2,
-      "periodicity": 0.05,
+      "periodicity": 0.04,
       "dominant_bpm": 0,
       "pattern": "NORMAL_BACKGROUND",
       "evidence_index": 8,
-      "timestamp": "2026-10-15T14:27:08.323Z"
+      "createdAt": "2026-10-17T09:13:00.342Z",
+      "updatedAt": "2026-10-17T09:13:00.342Z",
+      "__v": 0
     },
     {
-      "node_id": "node-bravo",
-      "audio_level": 36.7,
-      "vibration_rms": 0.025,
-      "vibration_peak": 0.035,
-      "temperature": 24.1,
-      "periodicity": 0.08,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 12,
-      "timestamp": "2026-10-15T14:27:08.323Z"
-    },
-    {
+      "_id": "6ad33c1c687a2aa5b0530564",
       "node_id": "node-charlie",
-      "audio_level": 39.4,
-      "vibration_rms": 0.029,
-      "vibration_peak": 0.042,
-      "temperature": 24,
+      "timestamp": "2026-10-17T09:13:00.170Z",
+      "audio_level": 38.147553463363,
+      "vibration_rms": 0.022055580913529996,
+      "vibration_peak": 0.032,
+      "temperature": 23.1,
       "periodicity": 0.02,
       "dominant_bpm": 0,
       "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 5,
-      "timestamp": "2026-10-15T14:27:08.323Z"
+      "evidence_index": 6,
+      "createdAt": "2026-10-17T09:13:00.343Z",
+      "updatedAt": "2026-10-17T09:13:00.343Z",
+      "__v": 0
     },
     {
-      "node_id": "node-alpha",
-      "audio_level": 37.6,
-      "vibration_rms": 0.029,
+      "_id": "6ad33c1c687a2aa5b0530563",
+      "node_id": "node-bravo",
+      "timestamp": "2026-10-17T09:13:00.170Z",
+      "audio_level": 42.77097624388571,
+      "vibration_rms": 0.02664729679742753,
       "vibration_peak": 0.044,
-      "temperature": 24,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T14:27:11.332Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 39,
-      "vibration_rms": 0.025,
-      "vibration_peak": 0.033,
-      "temperature": 24.2,
-      "periodicity": 0.08,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 12,
-      "timestamp": "2026-10-15T14:27:11.332Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 37,
-      "vibration_rms": 0.021,
-      "vibration_peak": 0.029,
-      "temperature": 24.2,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 5,
-      "timestamp": "2026-10-15T14:27:11.332Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 39.1,
-      "vibration_rms": 0.024,
-      "vibration_peak": 0.04,
-      "temperature": 23.8,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T14:27:14.333Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 35.4,
-      "vibration_rms": 0.029,
-      "vibration_peak": 0.049,
       "temperature": 23.9,
-      "periodicity": 0.08,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 12,
-      "timestamp": "2026-10-15T14:27:14.334Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 35.4,
-      "vibration_rms": 0.026,
-      "vibration_peak": 0.035,
-      "temperature": 24.2,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 5,
-      "timestamp": "2026-10-15T14:27:14.334Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 39.6,
-      "vibration_rms": 0.025,
-      "vibration_peak": 0.033,
-      "temperature": 24,
       "periodicity": 0.05,
       "dominant_bpm": 0,
       "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T14:27:17.335Z"
+      "evidence_index": 10,
+      "createdAt": "2026-10-17T09:13:00.343Z",
+      "updatedAt": "2026-10-17T09:13:00.343Z",
+      "__v": 0
     },
     {
-      "node_id": "node-bravo",
-      "audio_level": 36.2,
-      "vibration_rms": 0.025,
-      "vibration_peak": 0.038,
-      "temperature": 23.9,
-      "periodicity": 0.08,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 12,
-      "timestamp": "2026-10-15T14:27:17.335Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 35.3,
-      "vibration_rms": 0.02,
-      "vibration_peak": 0.03,
-      "temperature": 24.1,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 5,
-      "timestamp": "2026-10-15T14:27:17.335Z"
-    },
-    {
+      "_id": "6ad33c1d687a2aa5b0530565",
       "node_id": "node-alpha",
-      "audio_level": 36.9,
-      "vibration_rms": 0.029,
-      "vibration_peak": 0.043,
-      "temperature": 24.2,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T14:27:20.339Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 36,
-      "vibration_rms": 0.027,
-      "vibration_peak": 0.04,
-      "temperature": 23.9,
-      "periodicity": 0.08,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 12,
-      "timestamp": "2026-10-15T14:27:20.339Z"
-    },
-    {
-      "node_id": "node-charlie",
+      "timestamp": "2026-10-17T09:13:01.751Z",
       "audio_level": 36.3,
-      "vibration_rms": 0.025,
-      "vibration_peak": 0.039,
-      "temperature": 24,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 5,
-      "timestamp": "2026-10-15T14:27:20.339Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 37.2,
       "vibration_rms": 0.028,
-      "vibration_peak": 0.042,
-      "temperature": 23.9,
-      "periodicity": 0.05,
+      "vibration_peak": 0.038,
+      "temperature": 23.8,
+      "periodicity": 0.04,
       "dominant_bpm": 0,
       "pattern": "NORMAL_BACKGROUND",
       "evidence_index": 8,
-      "timestamp": "2026-10-15T14:27:23.344Z"
+      "createdAt": "2026-10-17T09:13:01.929Z",
+      "updatedAt": "2026-10-17T09:13:01.929Z",
+      "__v": 0
     },
     {
+      "_id": "6ad33c1d687a2aa5b0530566",
       "node_id": "node-bravo",
-      "audio_level": 39.9,
+      "timestamp": "2026-10-17T09:13:01.753Z",
+      "audio_level": 37.8,
+      "vibration_rms": 0.027,
+      "vibration_peak": 0.042,
+      "temperature": 24.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "createdAt": "2026-10-17T09:13:01.929Z",
+      "updatedAt": "2026-10-17T09:13:01.929Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad33c1d687a2aa5b0530567",
+      "node_id": "node-charlie",
+      "timestamp": "2026-10-17T09:13:01.853Z",
+      "audio_level": 38.1,
       "vibration_rms": 0.02,
       "vibration_peak": 0.027,
-      "temperature": 24.2,
-      "periodicity": 0.08,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 12,
-      "timestamp": "2026-10-15T14:27:23.344Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 37.5,
-      "vibration_rms": 0.024,
-      "vibration_peak": 0.041,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 5,
-      "timestamp": "2026-10-15T14:27:23.344Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 35.8,
-      "vibration_rms": 0.03,
-      "vibration_peak": 0.045,
-      "temperature": 24.1,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T14:27:26.348Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 38.1,
-      "vibration_rms": 0.022,
-      "vibration_peak": 0.035,
-      "temperature": 24,
-      "periodicity": 0.08,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 12,
-      "timestamp": "2026-10-15T14:27:26.348Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 39.9,
-      "vibration_rms": 0.024,
-      "vibration_peak": 0.04,
-      "temperature": 24.1,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 5,
-      "timestamp": "2026-10-15T14:27:26.348Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 37.3,
-      "vibration_rms": 0.023,
-      "vibration_peak": 0.03,
-      "temperature": 24,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T14:27:29.364Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 39.7,
-      "vibration_rms": 0.024,
-      "vibration_peak": 0.035,
-      "temperature": 24.1,
-      "periodicity": 0.08,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 12,
-      "timestamp": "2026-10-15T14:27:29.364Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 38.3,
-      "vibration_rms": 0.024,
-      "vibration_peak": 0.037,
-      "temperature": 24.2,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 5,
-      "timestamp": "2026-10-15T14:27:29.364Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 39.7,
-      "vibration_rms": 0.029,
-      "vibration_peak": 0.039,
-      "temperature": 23.8,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T14:27:32.376Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 38.5,
-      "vibration_rms": 0.023,
-      "vibration_peak": 0.031,
-      "temperature": 24.1,
-      "periodicity": 0.08,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 12,
-      "timestamp": "2026-10-15T14:27:32.377Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 35,
-      "vibration_rms": 0.021,
-      "vibration_peak": 0.032,
-      "temperature": 24.1,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 5,
-      "timestamp": "2026-10-15T14:27:32.377Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 36.7,
-      "vibration_rms": 0.024,
-      "vibration_peak": 0.039,
-      "temperature": 24.1,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T14:27:35.389Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 36.6,
-      "vibration_rms": 0.022,
-      "vibration_peak": 0.031,
-      "temperature": 23.9,
-      "periodicity": 0.08,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 12,
-      "timestamp": "2026-10-15T14:27:35.389Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 35.1,
-      "vibration_rms": 0.027,
-      "vibration_peak": 0.044,
-      "temperature": 24,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 5,
-      "timestamp": "2026-10-15T14:27:35.389Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-15T14:27:36.925Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-15T14:27:36.925Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-15T14:27:36.925Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-15T14:30:50.970Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-15T14:30:50.970Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-15T14:30:50.970Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 44,
-      "vibration_rms": 0.24,
-      "vibration_peak": 0.35,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 42,
-      "timestamp": "2026-10-15T14:30:53.253Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 46.5,
-      "vibration_rms": 0.28,
-      "vibration_peak": 0.42,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 48,
-      "timestamp": "2026-10-15T14:30:53.253Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 42,
-      "vibration_rms": 0.19,
-      "vibration_peak": 0.29,
-      "temperature": 23.2,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 35,
-      "timestamp": "2026-10-15T14:30:53.253Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-15T14:30:57.266Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-15T14:30:57.266Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-15T14:30:57.266Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 44,
-      "vibration_rms": 0.24,
-      "vibration_peak": 0.35,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 42,
-      "timestamp": "2026-10-15T14:30:58.143Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 46.5,
-      "vibration_rms": 0.28,
-      "vibration_peak": 0.42,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 48,
-      "timestamp": "2026-10-15T14:30:58.143Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 42,
-      "vibration_rms": 0.19,
-      "vibration_peak": 0.29,
-      "temperature": 23.2,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 35,
-      "timestamp": "2026-10-15T14:30:58.143Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 64,
-      "vibration_rms": 0.022,
-      "vibration_peak": 0.04,
-      "temperature": 24.3,
-      "periodicity": 0.18,
-      "dominant_bpm": 0,
-      "pattern": "SURVIVOR_VOCALIZATION",
-      "evidence_index": 82,
-      "timestamp": "2026-10-15T14:31:00.044Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 56.5,
-      "vibration_rms": 0.019,
-      "vibration_peak": 0.03,
-      "temperature": 24.1,
-      "periodicity": 0.12,
-      "dominant_bpm": 0,
-      "pattern": "SURVIVOR_VOCALIZATION",
-      "evidence_index": 68,
-      "timestamp": "2026-10-15T14:31:00.044Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 41.2,
-      "vibration_rms": 0.015,
-      "vibration_peak": 0.02,
-      "temperature": 23.4,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 15,
-      "timestamp": "2026-10-15T14:31:00.044Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 35.4,
-      "vibration_rms": 0.021,
-      "vibration_peak": 0.034,
-      "temperature": 24,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 15,
-      "timestamp": "2026-10-15T14:31:00.299Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 39.98985454128183,
-      "vibration_rms": 0.025983579343720926,
-      "vibration_peak": 0.038,
-      "temperature": 24.2,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T14:31:03.345Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 40.57936774117595,
-      "vibration_rms": 0.03117309711379199,
-      "vibration_peak": 0.044,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T14:31:03.345Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 37.224140230730306,
-      "vibration_rms": 0.021274732913753532,
-      "vibration_peak": 0.032,
-      "temperature": 23.1,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T14:31:03.345Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 35.6,
-      "vibration_rms": 0.029,
-      "vibration_peak": 0.045,
-      "temperature": 24,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T14:31:03.414Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 39,
-      "vibration_rms": 0.021,
-      "vibration_peak": 0.03,
-      "temperature": 24.1,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T14:31:03.414Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 37.2,
-      "vibration_rms": 0.021,
-      "vibration_peak": 0.031,
-      "temperature": 24.1,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T14:31:03.414Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 36.4,
-      "vibration_rms": 0.021,
-      "vibration_peak": 0.031,
-      "temperature": 23.8,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T14:31:06.426Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 37.5,
-      "vibration_rms": 0.03,
-      "vibration_peak": 0.043,
-      "temperature": 24.1,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T14:31:06.426Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 39.7,
-      "vibration_rms": 0.019,
-      "vibration_peak": 0.03,
-      "temperature": 24.2,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T14:31:06.426Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 64,
-      "vibration_rms": 0.022,
-      "vibration_peak": 0.04,
-      "temperature": 24.3,
-      "periodicity": 0.18,
-      "dominant_bpm": 0,
-      "pattern": "SURVIVOR_VOCALIZATION",
-      "evidence_index": 82,
-      "timestamp": "2026-10-15T14:31:09.439Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 56.5,
-      "vibration_rms": 0.019,
-      "vibration_peak": 0.03,
-      "temperature": 24.1,
-      "periodicity": 0.12,
-      "dominant_bpm": 0,
-      "pattern": "SURVIVOR_VOCALIZATION",
-      "evidence_index": 68,
-      "timestamp": "2026-10-15T14:31:09.439Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 41.2,
-      "vibration_rms": 0.015,
-      "vibration_peak": 0.02,
-      "temperature": 23.4,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 15,
-      "timestamp": "2026-10-15T14:31:09.439Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 37.9,
-      "vibration_rms": 0.024,
-      "vibration_peak": 0.032,
-      "temperature": 24.2,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 15,
-      "timestamp": "2026-10-15T14:31:09.523Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 39.1,
-      "vibration_rms": 0.026,
-      "vibration_peak": 0.043,
-      "temperature": 24.1,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 15,
-      "timestamp": "2026-10-15T14:31:12.564Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 36,
-      "vibration_rms": 0.028,
-      "vibration_peak": 0.047,
-      "temperature": 23.8,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 15,
-      "timestamp": "2026-10-15T14:31:15.578Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 36.1,
-      "vibration_rms": 0.024,
-      "vibration_peak": 0.036,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 15,
-      "timestamp": "2026-10-15T14:31:18.607Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 44,
-      "vibration_rms": 0.24,
-      "vibration_peak": 0.35,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 42,
-      "timestamp": "2026-10-15T14:31:19.125Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 46.5,
-      "vibration_rms": 0.28,
-      "vibration_peak": 0.42,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 48,
-      "timestamp": "2026-10-15T14:31:19.125Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 42,
-      "vibration_rms": 0.19,
-      "vibration_peak": 0.29,
-      "temperature": 23.2,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 35,
-      "timestamp": "2026-10-15T14:31:19.125Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-15T14:31:22.146Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-15T14:31:22.146Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-15T14:31:22.146Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 44,
-      "vibration_rms": 0.24,
-      "vibration_peak": 0.35,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 42,
-      "timestamp": "2026-10-15T14:31:39.126Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 46.5,
-      "vibration_rms": 0.28,
-      "vibration_peak": 0.42,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 48,
-      "timestamp": "2026-10-15T14:31:39.126Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 42,
-      "vibration_rms": 0.19,
-      "vibration_peak": 0.29,
-      "temperature": 23.2,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 35,
-      "timestamp": "2026-10-15T14:31:39.126Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-15T14:31:41.234Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-15T14:31:41.234Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-15T14:31:41.234Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 44,
-      "vibration_rms": 0.24,
-      "vibration_peak": 0.35,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 42,
-      "timestamp": "2026-10-15T14:31:54.886Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 46.5,
-      "vibration_rms": 0.28,
-      "vibration_peak": 0.42,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 48,
-      "timestamp": "2026-10-15T14:31:54.886Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 42,
-      "vibration_rms": 0.19,
-      "vibration_peak": 0.29,
-      "temperature": 23.2,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 35,
-      "timestamp": "2026-10-15T14:31:54.886Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-15T14:32:00.838Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-15T14:32:00.838Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-15T14:32:00.838Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-15T14:33:48.890Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-15T14:33:48.890Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-15T14:33:48.890Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-15T14:37:06.279Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-15T14:37:06.279Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-15T14:37:06.279Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-15T15:53:54.598Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-15T15:53:54.599Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-15T15:53:54.599Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 44,
-      "vibration_rms": 0.24,
-      "vibration_peak": 0.35,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 42,
-      "timestamp": "2026-10-15T15:54:13.946Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 46.5,
-      "vibration_rms": 0.28,
-      "vibration_peak": 0.42,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 48,
-      "timestamp": "2026-10-15T15:54:13.946Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 42,
-      "vibration_rms": 0.19,
-      "vibration_peak": 0.29,
-      "temperature": 23.2,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 35,
-      "timestamp": "2026-10-15T15:54:13.946Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 39.41497558734785,
-      "vibration_rms": 0.021719560981636087,
-      "vibration_peak": 0.038,
-      "temperature": 24.2,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:54:59.367Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 41.779647271129384,
-      "vibration_rms": 0.031855136195434244,
-      "vibration_peak": 0.044,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:54:59.367Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 39.17810656659259,
-      "vibration_rms": 0.02040756894300738,
-      "vibration_peak": 0.032,
-      "temperature": 23.1,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:54:59.367Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 39.1,
-      "vibration_rms": 0.027,
-      "vibration_peak": 0.039,
-      "temperature": 24.2,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:00.948Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 37.2,
-      "vibration_rms": 0.029,
-      "vibration_peak": 0.04,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:00.948Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 35.5,
-      "vibration_rms": 0.024,
-      "vibration_peak": 0.038,
-      "temperature": 23.8,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:00.948Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 38.8,
-      "vibration_rms": 0.027,
-      "vibration_peak": 0.041,
-      "temperature": 24.2,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:03.965Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 35.6,
-      "vibration_rms": 0.02,
-      "vibration_peak": 0.026,
-      "temperature": 24.2,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:03.965Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 35.2,
-      "vibration_rms": 0.023,
-      "vibration_peak": 0.037,
       "temperature": 24,
       "periodicity": 0.02,
       "dominant_bpm": 0,
       "pattern": "NORMAL_BACKGROUND",
       "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:03.965Z"
+      "createdAt": "2026-10-17T09:13:01.929Z",
+      "updatedAt": "2026-10-17T09:13:01.929Z",
+      "__v": 0
     },
     {
+      "_id": "6ad33c20687a2aa5b0530568",
       "node_id": "node-alpha",
-      "audio_level": 39.1,
-      "vibration_rms": 0.027,
-      "vibration_peak": 0.043,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:06.976Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 36.5,
-      "vibration_rms": 0.027,
-      "vibration_peak": 0.043,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:06.976Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 38.2,
-      "vibration_rms": 0.025,
-      "vibration_peak": 0.035,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:06.976Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 38.5,
-      "vibration_rms": 0.029,
-      "vibration_peak": 0.049,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:09.986Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 39.4,
-      "vibration_rms": 0.028,
-      "vibration_peak": 0.041,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:09.986Z"
-    },
-    {
-      "node_id": "node-charlie",
+      "timestamp": "2026-10-17T09:13:04.756Z",
       "audio_level": 37.8,
-      "vibration_rms": 0.024,
-      "vibration_peak": 0.035,
-      "temperature": 23.8,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:09.986Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 36.8,
       "vibration_rms": 0.029,
-      "vibration_peak": 0.038,
-      "temperature": 23.8,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:12.994Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 38.8,
-      "vibration_rms": 0.029,
-      "vibration_peak": 0.041,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:12.994Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 35,
-      "vibration_rms": 0.022,
-      "vibration_peak": 0.03,
-      "temperature": 24.1,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:12.994Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 39.8,
-      "vibration_rms": 0.02,
-      "vibration_peak": 0.031,
+      "vibration_peak": 0.039,
       "temperature": 24.1,
       "periodicity": 0.04,
       "dominant_bpm": 0,
       "pattern": "NORMAL_BACKGROUND",
       "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:16.008Z"
+      "createdAt": "2026-10-17T09:13:04.816Z",
+      "updatedAt": "2026-10-17T09:13:04.816Z",
+      "__v": 0
     },
     {
+      "_id": "6ad33c20687a2aa5b0530569",
       "node_id": "node-bravo",
-      "audio_level": 37.2,
-      "vibration_rms": 0.023,
-      "vibration_peak": 0.034,
-      "temperature": 24.2,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:16.008Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 37,
-      "vibration_rms": 0.028,
-      "vibration_peak": 0.047,
-      "temperature": 24,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:16.008Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 38.5,
-      "vibration_rms": 0.028,
-      "vibration_peak": 0.044,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:19.009Z"
-    },
-    {
-      "node_id": "node-bravo",
+      "timestamp": "2026-10-17T09:13:04.757Z",
       "audio_level": 39.2,
-      "vibration_rms": 0.023,
-      "vibration_peak": 0.032,
-      "temperature": 23.8,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:19.009Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 39.1,
-      "vibration_rms": 0.019,
-      "vibration_peak": 0.03,
-      "temperature": 24.1,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:19.009Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 35.7,
       "vibration_rms": 0.024,
-      "vibration_peak": 0.039,
-      "temperature": 23.8,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:22.014Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 36.8,
-      "vibration_rms": 0.028,
-      "vibration_peak": 0.039,
-      "temperature": 24.1,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:22.014Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 36.1,
-      "vibration_rms": 0.022,
-      "vibration_peak": 0.033,
-      "temperature": 24.1,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:22.014Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 36.2,
-      "vibration_rms": 0.022,
-      "vibration_peak": 0.032,
-      "temperature": 23.9,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:25.014Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 35.7,
-      "vibration_rms": 0.019,
-      "vibration_peak": 0.028,
-      "temperature": 24.1,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:25.014Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 39.1,
-      "vibration_rms": 0.021,
-      "vibration_peak": 0.034,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:25.014Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 38.6,
-      "vibration_rms": 0.022,
-      "vibration_peak": 0.032,
-      "temperature": 23.9,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:28.016Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 37.8,
-      "vibration_rms": 0.026,
-      "vibration_peak": 0.034,
-      "temperature": 23.8,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:28.016Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 40,
-      "vibration_rms": 0.019,
-      "vibration_peak": 0.028,
-      "temperature": 24,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:28.016Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 39.8,
-      "vibration_rms": 0.019,
-      "vibration_peak": 0.029,
-      "temperature": 24.2,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:31.028Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 36.3,
-      "vibration_rms": 0.029,
-      "vibration_peak": 0.045,
-      "temperature": 23.8,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:31.028Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 38.8,
-      "vibration_rms": 0.022,
-      "vibration_peak": 0.03,
-      "temperature": 24,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:31.028Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 35.4,
-      "vibration_rms": 0.02,
-      "vibration_peak": 0.031,
-      "temperature": 24.2,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:34.033Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 36.3,
-      "vibration_rms": 0.02,
-      "vibration_peak": 0.029,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:34.035Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 37,
-      "vibration_rms": 0.021,
-      "vibration_peak": 0.036,
-      "temperature": 24.1,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:34.035Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 35.5,
-      "vibration_rms": 0.028,
-      "vibration_peak": 0.047,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:37.046Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 38.5,
-      "vibration_rms": 0.024,
-      "vibration_peak": 0.035,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:37.046Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 39.6,
-      "vibration_rms": 0.028,
-      "vibration_peak": 0.038,
-      "temperature": 24,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:37.046Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 35.6,
-      "vibration_rms": 0.024,
-      "vibration_peak": 0.037,
-      "temperature": 23.9,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:40.045Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 36.4,
-      "vibration_rms": 0.028,
       "vibration_peak": 0.04,
-      "temperature": 24,
+      "temperature": 24.2,
       "periodicity": 0.05,
       "dominant_bpm": 0,
       "pattern": "NORMAL_BACKGROUND",
       "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:40.045Z"
+      "createdAt": "2026-10-17T09:13:04.816Z",
+      "updatedAt": "2026-10-17T09:13:04.816Z",
+      "__v": 0
     },
     {
+      "_id": "6ad33c20687a2aa5b053056a",
       "node_id": "node-charlie",
-      "audio_level": 39.8,
-      "vibration_rms": 0.029,
-      "vibration_peak": 0.046,
-      "temperature": 23.8,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:40.045Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 38.6,
-      "vibration_rms": 0.028,
-      "vibration_peak": 0.041,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:43.060Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 35.5,
-      "vibration_rms": 0.025,
-      "vibration_peak": 0.039,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:43.060Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 35.8,
-      "vibration_rms": 0.021,
-      "vibration_peak": 0.035,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:43.060Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 36.5,
-      "vibration_rms": 0.023,
-      "vibration_peak": 0.037,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:46.061Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 36,
-      "vibration_rms": 0.024,
-      "vibration_peak": 0.039,
-      "temperature": 24.1,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:46.061Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 35.3,
-      "vibration_rms": 0.029,
-      "vibration_peak": 0.039,
-      "temperature": 23.8,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:46.061Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 35.6,
-      "vibration_rms": 0.027,
-      "vibration_peak": 0.037,
-      "temperature": 23.9,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:49.062Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 38.2,
-      "vibration_rms": 0.019,
-      "vibration_peak": 0.029,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:49.062Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 39.1,
-      "vibration_rms": 0.021,
-      "vibration_peak": 0.033,
-      "temperature": 24.2,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:49.062Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 36.2,
-      "vibration_rms": 0.026,
-      "vibration_peak": 0.036,
-      "temperature": 23.8,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:52.068Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 36.6,
-      "vibration_rms": 0.023,
-      "vibration_peak": 0.038,
-      "temperature": 23.8,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:52.068Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 38.6,
-      "vibration_rms": 0.029,
-      "vibration_peak": 0.043,
-      "temperature": 23.8,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:52.068Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 37.7,
-      "vibration_rms": 0.03,
-      "vibration_peak": 0.043,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:55.105Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 37.7,
-      "vibration_rms": 0.026,
-      "vibration_peak": 0.043,
-      "temperature": 23.8,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:55.105Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 38.5,
-      "vibration_rms": 0.026,
-      "vibration_peak": 0.042,
-      "temperature": 24.2,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:55.105Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 35.7,
-      "vibration_rms": 0.025,
-      "vibration_peak": 0.038,
-      "temperature": 24.2,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T15:55:58.125Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 38,
-      "vibration_rms": 0.024,
-      "vibration_peak": 0.037,
-      "temperature": 24.1,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T15:55:58.125Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 36.7,
-      "vibration_rms": 0.02,
-      "vibration_peak": 0.032,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T15:55:58.125Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-15T15:55:59.195Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-15T15:55:59.195Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-15T15:55:59.195Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-15T16:01:34.001Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-15T16:01:34.001Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-15T16:01:34.001Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 39.469553671068226,
-      "vibration_rms": 0.024093809912433237,
-      "vibration_peak": 0.038,
-      "temperature": 24.2,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T16:01:35.768Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 42.66458380133053,
-      "vibration_rms": 0.031871874252943966,
-      "vibration_peak": 0.044,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T16:01:35.768Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 36.899693550120276,
-      "vibration_rms": 0.021176540489655615,
-      "vibration_peak": 0.032,
-      "temperature": 23.1,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T16:01:35.768Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-15T16:01:37.658Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-15T16:01:37.658Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-15T16:01:37.658Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 44,
-      "vibration_rms": 0.24,
-      "vibration_peak": 0.35,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 42,
-      "timestamp": "2026-10-15T16:01:48.902Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 46.5,
-      "vibration_rms": 0.28,
-      "vibration_peak": 0.42,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 48,
-      "timestamp": "2026-10-15T16:01:48.902Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 42,
-      "vibration_rms": 0.19,
-      "vibration_peak": 0.29,
-      "temperature": 23.2,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 35,
-      "timestamp": "2026-10-15T16:01:48.902Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-15T16:01:52.267Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-15T16:01:52.267Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-15T16:01:52.267Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 40.72873579331626,
-      "vibration_rms": 0.023775031296992415,
-      "vibration_peak": 0.038,
-      "temperature": 24.2,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T16:34:25.050Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 41.790657669587034,
-      "vibration_rms": 0.029823568601797835,
-      "vibration_peak": 0.044,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T16:34:25.050Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 36.790838368075036,
-      "vibration_rms": 0.02360381586171964,
-      "vibration_peak": 0.032,
-      "temperature": 23.1,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T16:34:25.050Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 39.5,
-      "vibration_rms": 0.023,
-      "vibration_peak": 0.037,
-      "temperature": 24,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T16:34:26.233Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 37.1,
-      "vibration_rms": 0.022,
-      "vibration_peak": 0.035,
-      "temperature": 24.1,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T16:34:26.233Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 38.6,
-      "vibration_rms": 0.023,
-      "vibration_peak": 0.036,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T16:34:26.233Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 39.5,
-      "vibration_rms": 0.023,
-      "vibration_peak": 0.032,
-      "temperature": 23.9,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-15T16:34:29.295Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 39.6,
-      "vibration_rms": 0.02,
-      "vibration_peak": 0.028,
-      "temperature": 24,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-15T16:34:29.295Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 36.6,
-      "vibration_rms": 0.027,
-      "vibration_peak": 0.038,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-15T16:34:29.295Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 64,
-      "vibration_rms": 0.022,
-      "vibration_peak": 0.04,
-      "temperature": 24.3,
-      "periodicity": 0.18,
-      "dominant_bpm": 0,
-      "pattern": "SURVIVOR_VOCALIZATION",
-      "evidence_index": 82,
-      "timestamp": "2026-10-15T16:34:31.508Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 56.5,
-      "vibration_rms": 0.019,
-      "vibration_peak": 0.03,
-      "temperature": 24.1,
-      "periodicity": 0.12,
-      "dominant_bpm": 0,
-      "pattern": "SURVIVOR_VOCALIZATION",
-      "evidence_index": 68,
-      "timestamp": "2026-10-15T16:34:31.508Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 41.2,
-      "vibration_rms": 0.015,
-      "vibration_peak": 0.02,
-      "temperature": 23.4,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 15,
-      "timestamp": "2026-10-15T16:34:31.508Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 35.8,
-      "vibration_rms": 0.028,
-      "vibration_peak": 0.047,
-      "temperature": 23.8,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 15,
-      "timestamp": "2026-10-15T16:34:32.406Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 44,
-      "vibration_rms": 0.24,
-      "vibration_peak": 0.35,
-      "temperature": 24.1,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 42,
-      "timestamp": "2026-10-15T16:34:34.766Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 46.5,
-      "vibration_rms": 0.28,
-      "vibration_peak": 0.42,
-      "temperature": 23.9,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 48,
-      "timestamp": "2026-10-15T16:34:34.766Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 42,
-      "vibration_rms": 0.19,
-      "vibration_peak": 0.29,
-      "temperature": 23.2,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "STRUCTURAL_SETTLING",
-      "evidence_index": 35,
-      "timestamp": "2026-10-15T16:34:34.766Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-15T16:34:37.884Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-15T16:34:37.884Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-15T16:34:37.884Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 68.4,
-      "vibration_rms": 0.082,
-      "vibration_peak": 0.28,
-      "temperature": 24.2,
-      "periodicity": 0.78,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 86,
-      "timestamp": "2026-10-17T06:03:12.393Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 74.8,
-      "vibration_rms": 0.165,
-      "vibration_peak": 0.49,
-      "temperature": 24,
-      "periodicity": 0.88,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 94,
-      "timestamp": "2026-10-17T06:03:12.393Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 51.2,
-      "vibration_rms": 0.046,
-      "vibration_peak": 0.12,
-      "temperature": 23.5,
-      "periodicity": 0.52,
-      "dominant_bpm": 104,
-      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
-      "evidence_index": 62,
-      "timestamp": "2026-10-17T06:03:12.393Z"
-    },
-    {
-      "node_id": "node-alpha",
-      "audio_level": 39.17257781521438,
-      "vibration_rms": 0.024198360847769936,
-      "vibration_peak": 0.038,
-      "temperature": 24.2,
-      "periodicity": 0.04,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 8,
-      "timestamp": "2026-10-17T06:03:15.900Z"
-    },
-    {
-      "node_id": "node-bravo",
-      "audio_level": 42.37634108087047,
-      "vibration_rms": 0.027780226257075782,
-      "vibration_peak": 0.044,
-      "temperature": 23.9,
-      "periodicity": 0.05,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 10,
-      "timestamp": "2026-10-17T06:03:15.900Z"
-    },
-    {
-      "node_id": "node-charlie",
-      "audio_level": 37.943895555752974,
-      "vibration_rms": 0.01835564459001925,
-      "vibration_peak": 0.032,
-      "temperature": 23.1,
-      "periodicity": 0.02,
-      "dominant_bpm": 0,
-      "pattern": "NORMAL_BACKGROUND",
-      "evidence_index": 6,
-      "timestamp": "2026-10-17T06:03:15.900Z"
-    },
-    {
-      "node_id": "node-alpha",
+      "timestamp": "2026-10-17T09:13:04.757Z",
       "audio_level": 39.4,
-      "vibration_rms": 0.027,
+      "vibration_rms": 0.03,
+      "vibration_peak": 0.04,
+      "temperature": 24,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "createdAt": "2026-10-17T09:13:04.817Z",
+      "updatedAt": "2026-10-17T09:13:04.817Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad33c23687a2aa5b053056b",
+      "node_id": "node-alpha",
+      "timestamp": "2026-10-17T09:13:07.837Z",
+      "audio_level": 36,
+      "vibration_rms": 0.026,
+      "vibration_peak": 0.043,
+      "temperature": 24,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "createdAt": "2026-10-17T09:13:08.015Z",
+      "updatedAt": "2026-10-17T09:13:08.015Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad33c23687a2aa5b053056c",
+      "node_id": "node-bravo",
+      "timestamp": "2026-10-17T09:13:07.838Z",
+      "audio_level": 38.6,
+      "vibration_rms": 0.021,
+      "vibration_peak": 0.029,
+      "temperature": 24,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "createdAt": "2026-10-17T09:13:08.015Z",
+      "updatedAt": "2026-10-17T09:13:08.015Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad33c23687a2aa5b053056d",
+      "node_id": "node-charlie",
+      "timestamp": "2026-10-17T09:13:07.839Z",
+      "audio_level": 38.1,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.046,
+      "temperature": 24.2,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "createdAt": "2026-10-17T09:13:08.015Z",
+      "updatedAt": "2026-10-17T09:13:08.015Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad33c26687a2aa5b053056e",
+      "node_id": "node-alpha",
+      "timestamp": "2026-10-17T09:13:10.859Z",
+      "audio_level": 37.6,
+      "vibration_rms": 0.024,
       "vibration_peak": 0.037,
       "temperature": 24,
       "periodicity": 0.04,
       "dominant_bpm": 0,
       "pattern": "NORMAL_BACKGROUND",
       "evidence_index": 8,
-      "timestamp": "2026-10-17T06:03:16.987Z"
+      "createdAt": "2026-10-17T09:13:10.905Z",
+      "updatedAt": "2026-10-17T09:13:10.905Z",
+      "__v": 0
     },
     {
+      "_id": "6ad33c26687a2aa5b053056f",
       "node_id": "node-bravo",
-      "audio_level": 36.1,
-      "vibration_rms": 0.02,
-      "vibration_peak": 0.032,
+      "timestamp": "2026-10-17T09:13:10.860Z",
+      "audio_level": 36,
+      "vibration_rms": 0.018,
+      "vibration_peak": 0.03,
       "temperature": 24,
       "periodicity": 0.05,
       "dominant_bpm": 0,
       "pattern": "NORMAL_BACKGROUND",
       "evidence_index": 10,
-      "timestamp": "2026-10-17T06:03:16.987Z"
+      "createdAt": "2026-10-17T09:13:10.905Z",
+      "updatedAt": "2026-10-17T09:13:10.905Z",
+      "__v": 0
     },
     {
+      "_id": "6ad33c26687a2aa5b0530570",
       "node_id": "node-charlie",
-      "audio_level": 35.6,
-      "vibration_rms": 0.023,
-      "vibration_peak": 0.032,
-      "temperature": 23.8,
+      "timestamp": "2026-10-17T09:13:10.860Z",
+      "audio_level": 39.2,
+      "vibration_rms": 0.022,
+      "vibration_peak": 0.035,
+      "temperature": 23.9,
       "periodicity": 0.02,
       "dominant_bpm": 0,
       "pattern": "NORMAL_BACKGROUND",
       "evidence_index": 6,
-      "timestamp": "2026-10-17T06:03:16.987Z"
+      "createdAt": "2026-10-17T09:13:10.905Z",
+      "updatedAt": "2026-10-17T09:13:10.905Z",
+      "__v": 0
     },
     {
+      "_id": "6ad33c29687a2aa5b0530571",
       "node_id": "node-alpha",
+      "timestamp": "2026-10-17T09:13:13.896Z",
+      "audio_level": 37,
+      "vibration_rms": 0.027,
+      "vibration_peak": 0.044,
+      "temperature": 24,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "createdAt": "2026-10-17T09:13:13.938Z",
+      "updatedAt": "2026-10-17T09:13:13.938Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad33c29687a2aa5b0530572",
+      "node_id": "node-bravo",
+      "timestamp": "2026-10-17T09:13:13.897Z",
+      "audio_level": 35.2,
+      "vibration_rms": 0.02,
+      "vibration_peak": 0.029,
+      "temperature": 24.2,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "createdAt": "2026-10-17T09:13:13.938Z",
+      "updatedAt": "2026-10-17T09:13:13.938Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad33c29687a2aa5b0530573",
+      "node_id": "node-charlie",
+      "timestamp": "2026-10-17T09:13:13.897Z",
+      "audio_level": 37.6,
+      "vibration_rms": 0.019,
+      "vibration_peak": 0.03,
+      "temperature": 24,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "createdAt": "2026-10-17T09:13:13.938Z",
+      "updatedAt": "2026-10-17T09:13:13.938Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad33c2c687a2aa5b0530574",
+      "node_id": "node-alpha",
+      "timestamp": "2026-10-17T09:13:16.943Z",
+      "audio_level": 36.4,
+      "vibration_rms": 0.019,
+      "vibration_peak": 0.029,
+      "temperature": 23.9,
+      "periodicity": 0.04,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 8,
+      "createdAt": "2026-10-17T09:13:17.122Z",
+      "updatedAt": "2026-10-17T09:13:17.122Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad33c2c687a2aa5b0530575",
+      "node_id": "node-bravo",
+      "timestamp": "2026-10-17T09:13:16.948Z",
+      "audio_level": 37.7,
+      "vibration_rms": 0.018,
+      "vibration_peak": 0.025,
+      "temperature": 24,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 10,
+      "createdAt": "2026-10-17T09:13:17.123Z",
+      "updatedAt": "2026-10-17T09:13:17.123Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad33c2c687a2aa5b0530576",
+      "node_id": "node-charlie",
+      "timestamp": "2026-10-17T09:13:16.948Z",
+      "audio_level": 37.5,
+      "vibration_rms": 0.028,
+      "vibration_peak": 0.038,
+      "temperature": 23.9,
+      "periodicity": 0.02,
+      "dominant_bpm": 0,
+      "pattern": "NORMAL_BACKGROUND",
+      "evidence_index": 6,
+      "createdAt": "2026-10-17T09:13:17.123Z",
+      "updatedAt": "2026-10-17T09:13:17.123Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad33c2f687a2aa5b0530577",
+      "node_id": "node-alpha",
+      "timestamp": "2026-10-17T09:13:19.126Z",
       "audio_level": 68.4,
       "vibration_rms": 0.082,
       "vibration_peak": 0.28,
@@ -2595,10 +530,14 @@
       "dominant_bpm": 104,
       "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "evidence_index": 86,
-      "timestamp": "2026-10-17T06:03:18.699Z"
+      "createdAt": "2026-10-17T09:13:19.436Z",
+      "updatedAt": "2026-10-17T09:13:19.436Z",
+      "__v": 0
     },
     {
+      "_id": "6ad33c2f687a2aa5b0530578",
       "node_id": "node-bravo",
+      "timestamp": "2026-10-17T09:13:19.128Z",
       "audio_level": 74.8,
       "vibration_rms": 0.165,
       "vibration_peak": 0.49,
@@ -2607,10 +546,14 @@
       "dominant_bpm": 104,
       "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "evidence_index": 94,
-      "timestamp": "2026-10-17T06:03:18.699Z"
+      "createdAt": "2026-10-17T09:13:19.436Z",
+      "updatedAt": "2026-10-17T09:13:19.436Z",
+      "__v": 0
     },
     {
+      "_id": "6ad33c2f687a2aa5b0530579",
       "node_id": "node-charlie",
+      "timestamp": "2026-10-17T09:13:19.143Z",
       "audio_level": 51.2,
       "vibration_rms": 0.046,
       "vibration_peak": 0.12,
@@ -2619,20 +562,619 @@
       "dominant_bpm": 104,
       "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "evidence_index": 62,
-      "timestamp": "2026-10-17T06:03:18.699Z"
+      "createdAt": "2026-10-17T09:13:19.436Z",
+      "updatedAt": "2026-10-17T09:13:19.436Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad344114b08d72b16afab42",
+      "node_id": "node-alpha",
+      "timestamp": "2026-10-17T09:46:57.138Z",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "createdAt": "2026-10-17T09:46:57.228Z",
+      "updatedAt": "2026-10-17T09:46:57.228Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad344114b08d72b16afab44",
+      "node_id": "node-charlie",
+      "timestamp": "2026-10-17T09:46:57.155Z",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "createdAt": "2026-10-17T09:46:57.229Z",
+      "updatedAt": "2026-10-17T09:46:57.229Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad344114b08d72b16afab43",
+      "node_id": "node-bravo",
+      "timestamp": "2026-10-17T09:46:57.155Z",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "createdAt": "2026-10-17T09:46:57.229Z",
+      "updatedAt": "2026-10-17T09:46:57.229Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad344124b08d72b16afab46",
+      "node_id": "node-alpha",
+      "timestamp": "2026-10-17T09:46:58.569Z",
+      "audio_level": 68.4,
+      "vibration_rms": 0.082,
+      "vibration_peak": 0.28,
+      "temperature": 24.2,
+      "periodicity": 0.78,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 86,
+      "createdAt": "2026-10-17T09:46:58.800Z",
+      "updatedAt": "2026-10-17T09:46:58.800Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad344124b08d72b16afab47",
+      "node_id": "node-bravo",
+      "timestamp": "2026-10-17T09:46:58.647Z",
+      "audio_level": 74.8,
+      "vibration_rms": 0.165,
+      "vibration_peak": 0.49,
+      "temperature": 24,
+      "periodicity": 0.88,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 94,
+      "createdAt": "2026-10-17T09:46:58.800Z",
+      "updatedAt": "2026-10-17T09:46:58.800Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad344124b08d72b16afab48",
+      "node_id": "node-charlie",
+      "timestamp": "2026-10-17T09:46:58.649Z",
+      "audio_level": 51.2,
+      "vibration_rms": 0.046,
+      "vibration_peak": 0.12,
+      "temperature": 23.5,
+      "periodicity": 0.52,
+      "dominant_bpm": 104,
+      "pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "evidence_index": 62,
+      "createdAt": "2026-10-17T09:46:58.800Z",
+      "updatedAt": "2026-10-17T09:46:58.800Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad34e5aad620e004eeb253f",
+      "node_id": "node-alpha",
+      "timestamp": "2026-10-17T10:30:50.531Z",
+      "audio_level": 58.3,
+      "vibration_rms": 0.015,
+      "vibration_peak": 0.024,
+      "temperature": 36.56,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "SURVIVOR_VOCALIZATION",
+      "evidence_index": 29,
+      "createdAt": "2026-10-17T10:30:50.532Z",
+      "updatedAt": "2026-10-17T10:30:50.532Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad34e5f2aefc3aed6a1dde9",
+      "node_id": "node-alpha",
+      "timestamp": "2026-10-17T10:30:54.999Z",
+      "audio_level": 58.3,
+      "vibration_rms": 0.015,
+      "vibration_peak": 0.024,
+      "temperature": 36.54,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "SURVIVOR_VOCALIZATION",
+      "evidence_index": 29,
+      "createdAt": "2026-10-17T10:30:55.013Z",
+      "updatedAt": "2026-10-17T10:30:55.013Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ad354c4c2e5bd128b5df63e",
+      "node_id": "RM-NODE-01",
+      "timestamp": "2026-10-17T10:58:12.474Z",
+      "audio_level": 58.3,
+      "vibration_rms": 0.015,
+      "vibration_peak": 0.024,
+      "temperature": 36.61,
+      "periodicity": 0.05,
+      "dominant_bpm": 0,
+      "pattern": "SURVIVOR_VOCALIZATION",
+      "evidence_index": 29,
+      "createdAt": "2026-10-17T10:58:12.495Z",
+      "updatedAt": "2026-10-17T10:58:12.495Z",
+      "__v": 0
     }
   ],
   "alerts": [
     {
+      "id": "alt-1792234752387",
+      "timestamp": "2026-10-17T10:59:12.387Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "coordinates": {
+        "x": 32.4,
+        "y": 33.5
+      },
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (32.4m, 33.5m)."
+    },
+    {
+      "coordinates": {
+        "x": 32.4,
+        "y": 33.5
+      },
+      "_id": "6ad354c4c2e5bd128b5df63f",
+      "id": "alt-1792234692807",
+      "timestamp": "2026-10-17T10:58:12.807Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (32.4m, 33.5m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "createdAt": "2026-10-17T10:58:12.812Z",
+      "updatedAt": "2026-10-17T10:58:12.812Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad35490c2e5bd128b5df63c",
+      "id": "alt-1792234640179",
+      "timestamp": "2026-10-17T10:57:20.179Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "createdAt": "2026-10-17T10:57:20.272Z",
+      "updatedAt": "2026-10-17T10:57:20.272Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad34b20ad620e004eeb253e",
+      "id": "alt-1792232224033",
+      "timestamp": "2026-10-17T10:17:04.033Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "createdAt": "2026-10-17T10:17:04.582Z",
+      "updatedAt": "2026-10-17T10:17:04.582Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad34893c01ea0c35715f254",
+      "id": "alt-1792231571029",
+      "timestamp": "2026-10-17T10:06:11.029Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "createdAt": "2026-10-17T10:06:11.042Z",
+      "updatedAt": "2026-10-17T10:06:11.042Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad3478a44c2d145d5254f3f",
+      "id": "alt-1792231305945",
+      "timestamp": "2026-10-17T10:01:45.945Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "createdAt": "2026-10-17T10:01:46.894Z",
+      "updatedAt": "2026-10-17T10:01:46.894Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad34766a3dde894aa98bb04",
+      "id": "alt-1792231270669",
+      "timestamp": "2026-10-17T10:01:10.669Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "createdAt": "2026-10-17T10:01:10.703Z",
+      "updatedAt": "2026-10-17T10:01:10.703Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad34652ad50e927c1b68771",
+      "id": "alt-1792230994545",
+      "timestamp": "2026-10-17T09:56:34.545Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "FALSE_ALARM",
+      "notes": "",
+      "reviewed_by": "Commander Alex Vance (SAR Taskforce 1)",
+      "reviewed_at": "2026-10-17T09:58:27.469Z",
+      "createdAt": "2026-10-17T09:56:34.553Z",
+      "updatedAt": "2026-10-17T09:58:27.638Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad344114b08d72b16afab45",
+      "id": "alt-1792230417686",
+      "timestamp": "2026-10-17T09:46:57.686Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "createdAt": "2026-10-17T09:46:57.765Z",
+      "updatedAt": "2026-10-17T09:46:57.765Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad3436a4b08d72b16afab41",
+      "id": "alt-1792230250884",
+      "timestamp": "2026-10-17T09:44:10.884Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "createdAt": "2026-10-17T09:44:11.325Z",
+      "updatedAt": "2026-10-17T09:44:11.325Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad33c1a687a2aa5b0530561",
+      "id": "alt-1792228378808",
+      "timestamp": "2026-10-17T09:12:58.808Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "createdAt": "2026-10-17T09:12:59.071Z",
+      "updatedAt": "2026-10-17T09:12:59.071Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.4,
+        "y": 34.3
+      },
+      "_id": "6ad33bec687a2aa5b053055c",
+      "id": "alt-1792228332707",
+      "timestamp": "2026-10-17T09:12:12.707Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.4m, 34.3m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "createdAt": "2026-10-17T09:12:12.724Z",
+      "updatedAt": "2026-10-17T09:12:12.724Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad33b745834df37615d52e0",
+      "id": "alt-1792228212417",
+      "timestamp": "2026-10-17T09:10:12.417Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "createdAt": "2026-10-17T09:10:12.899Z",
+      "updatedAt": "2026-10-17T09:10:12.899Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad33a598b009b3d45cdd599",
+      "id": "alt-1792227929857",
+      "timestamp": "2026-10-17T09:05:29.857Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "createdAt": "2026-10-17T09:05:29.876Z",
+      "updatedAt": "2026-10-17T09:05:29.876Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad33a3f784f1ad08123e77b",
+      "id": "alt-1792227903680",
+      "timestamp": "2026-10-17T09:05:03.680Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "createdAt": "2026-10-17T09:05:03.700Z",
+      "updatedAt": "2026-10-17T09:05:03.700Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad339f15f489b2d39bf42c8",
+      "id": "alt-1792227825975",
+      "timestamp": "2026-10-17T09:03:45.975Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "createdAt": "2026-10-17T09:03:46.564Z",
+      "updatedAt": "2026-10-17T09:03:46.564Z",
+      "__v": 0
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad339d05f489b2d39bf42b1",
+      "id": "alt-1792226469861",
+      "timestamp": "2026-10-17T08:41:09.861Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.086Z",
+      "updatedAt": "2026-10-17T09:03:12.086Z"
+    },
+    {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad339d05f489b2d39bf42b2",
       "id": "alt-1792220482758",
       "timestamp": "2026-10-17T07:01:22.758Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector B3",
-      "coordinates": {
-        "x": 31.7,
-        "y": 34
-      },
       "evidence_score": 94,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
@@ -2642,18 +1184,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 1.9,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.086Z",
+      "updatedAt": "2026-10-17T09:03:12.086Z"
     },
     {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad339d05f489b2d39bf42b3",
       "id": "alt-1792220447825",
       "timestamp": "2026-10-17T07:00:47.825Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector B3",
-      "coordinates": {
-        "x": 31.7,
-        "y": 34
-      },
       "evidence_score": 94,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
@@ -2663,18 +1211,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 1.9,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.086Z",
+      "updatedAt": "2026-10-17T09:03:12.086Z"
     },
     {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad339d05f489b2d39bf42b4",
       "id": "alt-1792220387695",
       "timestamp": "2026-10-17T06:59:47.695Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector B3",
-      "coordinates": {
-        "x": 31.7,
-        "y": 34
-      },
       "evidence_score": 94,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
@@ -2684,18 +1238,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 1.9,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.086Z",
+      "updatedAt": "2026-10-17T09:03:12.086Z"
     },
     {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad339d05f489b2d39bf42b5",
       "id": "alt-1792220350525",
       "timestamp": "2026-10-17T06:59:10.525Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector B3",
-      "coordinates": {
-        "x": 31.7,
-        "y": 34
-      },
       "evidence_score": 94,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
@@ -2705,18 +1265,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 1.9,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.086Z",
+      "updatedAt": "2026-10-17T09:03:12.086Z"
     },
     {
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "_id": "6ad339d05f489b2d39bf42b6",
       "id": "alt-1792216991087",
       "timestamp": "2026-10-17T06:03:11.087Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector B2",
-      "coordinates": {
-        "x": 27.9,
-        "y": 33.9
-      },
       "evidence_score": 95,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
@@ -2726,18 +1292,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 0.8,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.086Z",
+      "updatedAt": "2026-10-17T09:03:12.086Z"
     },
     {
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "_id": "6ad339d05f489b2d39bf42b7",
       "id": "alt-1792216910359",
       "timestamp": "2026-10-17T06:01:50.359Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector B2",
-      "coordinates": {
-        "x": 27.9,
-        "y": 33.9
-      },
       "evidence_score": 95,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
@@ -2747,18 +1319,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 0.8,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.086Z",
+      "updatedAt": "2026-10-17T09:03:12.086Z"
     },
     {
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "_id": "6ad339d05f489b2d39bf42b8",
       "id": "alt-1792091102655",
       "timestamp": "2026-10-15T19:05:02.655Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector B2",
-      "coordinates": {
-        "x": 27.9,
-        "y": 33.9
-      },
       "evidence_score": 95,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
@@ -2768,18 +1346,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 0.8,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.086Z",
+      "updatedAt": "2026-10-17T09:03:12.086Z"
     },
     {
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "_id": "6ad339d05f489b2d39bf42b9",
       "id": "alt-1792091100478",
       "timestamp": "2026-10-15T19:05:00.478Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector B2",
-      "coordinates": {
-        "x": 27.9,
-        "y": 33.9
-      },
       "evidence_score": 95,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
@@ -2789,18 +1373,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 0.8,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.087Z",
+      "updatedAt": "2026-10-17T09:03:12.087Z"
     },
     {
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "_id": "6ad339d05f489b2d39bf42ba",
       "id": "alt-1792090160794",
       "timestamp": "2026-10-15T18:49:20.794Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector B2",
-      "coordinates": {
-        "x": 27.9,
-        "y": 33.9
-      },
       "evidence_score": 95,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
@@ -2810,18 +1400,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 0.8,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.087Z",
+      "updatedAt": "2026-10-17T09:03:12.087Z"
     },
     {
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "_id": "6ad339d05f489b2d39bf42bb",
       "id": "alt-1792089908132",
       "timestamp": "2026-10-15T18:45:08.132Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector B2",
-      "coordinates": {
-        "x": 27.9,
-        "y": 33.9
-      },
       "evidence_score": 95,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
@@ -2831,18 +1427,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 0.8,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.087Z",
+      "updatedAt": "2026-10-17T09:03:12.087Z"
     },
     {
-      "id": "alt-1792082071598",
-      "timestamp": "2026-10-15T16:34:31.598Z",
-      "status": "PENDING_REVIEW",
-      "priority_level": "CRITICAL",
-      "sector": "Sector B2",
       "coordinates": {
         "x": 26.8,
         "y": 38
       },
+      "_id": "6ad339d05f489b2d39bf42bc",
+      "id": "alt-1792082071598",
+      "timestamp": "2026-10-15T16:34:31.598Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B2",
       "evidence_score": 83,
       "detected_pattern": "SURVIVOR_VOCALIZATION",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (2 nodes confirmed)",
@@ -2851,18 +1453,24 @@
         "node-bravo"
       ],
       "estimated_depth_m": 1.1,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (26.8m, 38m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (26.8m, 38m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.087Z",
+      "updatedAt": "2026-10-17T09:03:12.087Z"
     },
     {
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "_id": "6ad339d05f489b2d39bf42bd",
       "id": "alt-1792080082576",
       "timestamp": "2026-10-15T16:01:22.576Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector B2",
-      "coordinates": {
-        "x": 27.9,
-        "y": 33.9
-      },
       "evidence_score": 95,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
@@ -2872,18 +1480,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 0.8,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.087Z",
+      "updatedAt": "2026-10-17T09:03:12.087Z"
     },
     {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad339d05f489b2d39bf42be",
       "id": "alt-1792079816385",
       "timestamp": "2026-10-15T15:56:56.385Z",
-      "status": "DISPATCHED_SAR",
       "priority_level": "CRITICAL",
       "sector": "Sector B3",
-      "coordinates": {
-        "x": 31.7,
-        "y": 34
-      },
       "evidence_score": 94,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
@@ -2893,20 +1507,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 1.9,
+      "status": "DISPATCHED_SAR",
       "notes": "SAR Team 4 En Route",
       "reviewed_by": "Commander Alex Vance",
-      "reviewed_at": "2026-10-15T15:57:24.322Z"
+      "reviewed_at": "2026-10-15T15:57:24.322Z",
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.087Z",
+      "updatedAt": "2026-10-17T09:03:12.087Z"
     },
     {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad339d05f489b2d39bf42bf",
       "id": "alt-1792079759606",
       "timestamp": "2026-10-15T15:55:59.606Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector B3",
-      "coordinates": {
-        "x": 31.7,
-        "y": 34
-      },
       "evidence_score": 94,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
@@ -2916,18 +1534,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 1.9,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.087Z",
+      "updatedAt": "2026-10-17T09:03:12.087Z"
     },
     {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad339d05f489b2d39bf42c0",
       "id": "alt-1792079634627",
       "timestamp": "2026-10-15T15:53:54.627Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector B3",
-      "coordinates": {
-        "x": 31.7,
-        "y": 34
-      },
       "evidence_score": 94,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
@@ -2937,18 +1561,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 1.9,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.087Z",
+      "updatedAt": "2026-10-17T09:03:12.087Z"
     },
     {
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "_id": "6ad339d05f489b2d39bf42c1",
       "id": "alt-1792075575284",
       "timestamp": "2026-10-15T14:46:15.284Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector B3",
-      "coordinates": {
-        "x": 31.7,
-        "y": 34
-      },
       "evidence_score": 94,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
@@ -2958,18 +1588,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 1.9,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.087Z",
+      "updatedAt": "2026-10-17T09:03:12.087Z"
     },
     {
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "_id": "6ad339d05f489b2d39bf42c2",
       "id": "alt-1792075026298",
       "timestamp": "2026-10-15T14:37:06.298Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector C2",
-      "coordinates": {
-        "x": 27.9,
-        "y": 33.9
-      },
       "evidence_score": 95,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
@@ -2979,18 +1615,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 0.8,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector C2 immediately at (27.9m, 33.9m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector C2 immediately at (27.9m, 33.9m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.087Z",
+      "updatedAt": "2026-10-17T09:03:12.087Z"
     },
     {
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "_id": "6ad339d05f489b2d39bf42c3",
       "id": "alt-1792074828924",
       "timestamp": "2026-10-15T14:33:48.924Z",
-      "status": "PENDING_REVIEW",
       "priority_level": "CRITICAL",
       "sector": "Sector C2",
-      "coordinates": {
-        "x": 27.9,
-        "y": 33.9
-      },
       "evidence_score": 95,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
@@ -3000,18 +1642,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 0.8,
-      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector C2 immediately at (27.9m, 33.9m)."
+      "status": "PENDING_REVIEW",
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector C2 immediately at (27.9m, 33.9m).",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.087Z",
+      "updatedAt": "2026-10-17T09:03:12.087Z"
     },
     {
+      "coordinates": {
+        "x": 27.9,
+        "y": 33.9
+      },
+      "_id": "6ad339d05f489b2d39bf42c4",
       "id": "alt-1792074701254",
       "timestamp": "2026-10-15T14:31:41.254Z",
-      "status": "CONFIRMED_SURVIVOR",
       "priority_level": "CRITICAL",
       "sector": "Sector C2",
-      "coordinates": {
-        "x": 27.9,
-        "y": 33.9
-      },
       "evidence_score": 95,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
@@ -3021,20 +1669,24 @@
         "node-charlie"
       ],
       "estimated_depth_m": 0.8,
+      "status": "CONFIRMED_SURVIVOR",
       "notes": "",
       "reviewed_by": "Commander Alex Vance (SAR Taskforce 1)",
-      "reviewed_at": "2026-10-15T14:32:24.936Z"
+      "reviewed_at": "2026-10-15T14:32:24.936Z",
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.087Z",
+      "updatedAt": "2026-10-17T09:03:12.087Z"
     },
     {
-      "id": "alt-1792074651874",
-      "timestamp": "2026-10-15T14:30:51.874Z",
-      "status": "INVESTIGATING",
-      "priority_level": "CRITICAL",
-      "sector": "Sector C2",
       "coordinates": {
         "x": 27.9,
         "y": 33.9
       },
+      "_id": "6ad339d05f489b2d39bf42c5",
+      "id": "alt-1792074651874",
+      "timestamp": "2026-10-15T14:30:51.874Z",
+      "priority_level": "CRITICAL",
+      "sector": "Sector C2",
       "evidence_score": 95,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
@@ -3044,70 +1696,87 @@
         "node-charlie"
       ],
       "estimated_depth_m": 0.8,
+      "status": "INVESTIGATING",
       "notes": "ddgfgyftrerrruyutyutyrtreetrytuuytyu",
       "reviewed_by": "Commander Alex Vance (SAR Taskforce 1)",
-      "reviewed_at": "2026-10-15T14:33:21.612Z"
+      "reviewed_at": "2026-10-15T14:33:21.612Z",
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.087Z",
+      "updatedAt": "2026-10-17T09:03:12.087Z"
     },
     {
-      "id": "alt-init-01",
-      "timestamp": "2026-10-15T13:54:42.482Z",
-      "priority_level": "ELEVATED",
-      "sector": "Sector B2",
       "coordinates": {
         "x": 26.5,
         "y": 38
       },
+      "_id": "6ad339d05f489b2d39bf42c6",
+      "id": "alt-init-01",
+      "timestamp": "2026-10-15T13:54:42.482Z",
+      "priority_level": "ELEVATED",
+      "sector": "Sector B2",
       "evidence_score": 78,
       "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
       "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (2 nodes in consensus)",
-      "status": "PENDING_REVIEW",
       "involved_nodes": [
         "node-alpha",
         "node-bravo"
       ],
       "estimated_depth_m": 1.4,
+      "status": "PENDING_REVIEW",
       "notes": "Awaiting SAR listening team confirmation. Correlated vibration confirmed.",
-      "reviewed_by": null
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.087Z",
+      "updatedAt": "2026-10-17T09:03:12.087Z"
     }
   ],
   "incidents": [
     {
+      "_id": "6ad339d05f489b2d39bf42c7",
       "id": "inc-001",
       "title": "Commercial Complex Sector Collapse",
       "site_name": "Building 4 Rubble Zone",
-      "created_at": "2026-10-15T12:09:42.482Z",
       "status": "ACTIVE",
       "active_nodes": 3,
       "total_alerts": 1,
-      "unresolved_alerts": 1
+      "unresolved_alerts": 1,
+      "__v": 0,
+      "createdAt": "2026-10-17T09:03:12.145Z",
+      "updatedAt": "2026-10-17T09:03:12.145Z"
     }
   ],
   "fusion_state": {
     "correlation_score": 0.96,
     "estimated_coords": {
-      "x": 31.7,
-      "y": 34
+      "x": 32.4,
+      "y": 33.5
     },
     "estimated_depth_m": 1.9,
     "evidence_score": 94,
     "heatmap": [
       {
-        "intensity": 13.6,
+        "intensity": 8.2,
+        "x": 25.7,
+        "y": 8.6
+      },
+      {
+        "intensity": 13.7,
         "x": 21.4,
         "y": 12.9
       },
       {
-        "intensity": 26.6,
+        "intensity": 26.4,
         "x": 25.7,
         "y": 12.9
       },
       {
-        "intensity": 10.3,
+        "intensity": 10.8,
         "x": 30,
         "y": 12.9
       },
       {
-        "intensity": 14.1,
+        "intensity": 14.3,
         "x": 21.4,
         "y": 17.1
       },
@@ -3117,72 +1786,107 @@
         "y": 17.1
       },
       {
-        "intensity": 11,
+        "intensity": 11.9,
         "x": 30,
         "y": 17.1
       },
       {
-        "intensity": 8.2,
+        "intensity": 8.7,
         "x": 21.4,
         "y": 21.4
       },
       {
-        "intensity": 9.7,
+        "intensity": 10.6,
         "x": 25.7,
         "y": 21.4
       },
       {
-        "intensity": 8.4,
+        "intensity": 10.1,
         "x": 30,
         "y": 21.4
       },
       {
-        "intensity": 8.1,
+        "intensity": 10.2,
+        "x": 34.3,
+        "y": 21.4
+      },
+      {
+        "intensity": 10,
+        "x": 38.6,
+        "y": 21.4
+      },
+      {
+        "intensity": 8.6,
+        "x": 25.7,
+        "y": 25.7
+      },
+      {
+        "intensity": 10.7,
         "x": 30,
         "y": 25.7
       },
       {
-        "intensity": 8.9,
+        "intensity": 16.6,
         "x": 34.3,
         "y": 25.7
       },
       {
-        "intensity": 8.9,
+        "intensity": 25.4,
         "x": 38.6,
         "y": 25.7
       },
       {
-        "intensity": 9.8,
+        "intensity": 11.7,
+        "x": 42.9,
+        "y": 25.7
+      },
+      {
+        "intensity": 8.8,
+        "x": 25.7,
+        "y": 30
+      },
+      {
+        "intensity": 12.1,
         "x": 30,
         "y": 30
       },
       {
-        "intensity": 14.7,
+        "intensity": 21,
         "x": 34.3,
         "y": 30
       },
       {
-        "intensity": 18.5,
+        "intensity": 29.3,
         "x": 38.6,
         "y": 30
       },
       {
-        "intensity": 11.9,
+        "intensity": 15.8,
         "x": 42.9,
         "y": 30
       },
       {
         "intensity": 8.6,
+        "x": 47.1,
+        "y": 30
+      },
+      {
+        "intensity": 8.4,
+        "x": 21.4,
+        "y": 34.3
+      },
+      {
+        "intensity": 9.5,
         "x": 25.7,
         "y": 34.3
       },
       {
-        "intensity": 11.7,
+        "intensity": 13.1,
         "x": 30,
         "y": 34.3
       },
       {
-        "intensity": 26.6,
+        "intensity": 28.6,
         "x": 34.3,
         "y": 34.3
       },
@@ -3192,112 +1896,117 @@
         "y": 34.3
       },
       {
-        "intensity": 18.5,
+        "intensity": 20.3,
         "x": 42.9,
         "y": 34.3
       },
       {
-        "intensity": 8.1,
+        "intensity": 9.3,
         "x": 47.1,
         "y": 34.3
       },
       {
-        "intensity": 8.7,
+        "intensity": 8.8,
         "x": 12.9,
         "y": 38.6
       },
       {
-        "intensity": 12.1,
+        "intensity": 12.2,
         "x": 17.1,
         "y": 38.6
       },
       {
-        "intensity": 11.4,
+        "intensity": 11.7,
         "x": 21.4,
         "y": 38.6
       },
       {
-        "intensity": 9.8,
+        "intensity": 10.3,
         "x": 25.7,
         "y": 38.6
       },
       {
-        "intensity": 11.1,
+        "intensity": 11.9,
         "x": 30,
         "y": 38.6
       },
       {
-        "intensity": 18.5,
+        "intensity": 19.4,
         "x": 34.3,
         "y": 38.6
       },
       {
-        "intensity": 27.4,
+        "intensity": 28.1,
         "x": 38.6,
         "y": 38.6
       },
       {
-        "intensity": 14.3,
+        "intensity": 15.2,
         "x": 42.9,
         "y": 38.6
-      },
-      {
-        "intensity": 13.7,
-        "x": 12.9,
-        "y": 42.9
-      },
-      {
-        "intensity": 38.6,
-        "x": 17.1,
-        "y": 42.9
-      },
-      {
-        "intensity": 21.4,
-        "x": 21.4,
-        "y": 42.9
-      },
-      {
-        "intensity": 10.9,
-        "x": 25.7,
-        "y": 42.9
-      },
-      {
-        "intensity": 9.2,
-        "x": 30,
-        "y": 42.9
-      },
-      {
-        "intensity": 10.1,
-        "x": 34.3,
-        "y": 42.9
-      },
-      {
-        "intensity": 10.6,
-        "x": 38.6,
-        "y": 42.9
       },
       {
         "intensity": 8.2,
+        "x": 47.1,
+        "y": 38.6
+      },
+      {
+        "intensity": 13.6,
+        "x": 12.9,
+        "y": 42.9
+      },
+      {
+        "intensity": 37.7,
+        "x": 17.1,
+        "y": 42.9
+      },
+      {
+        "intensity": 21.2,
+        "x": 21.4,
+        "y": 42.9
+      },
+      {
+        "intensity": 11.1,
+        "x": 25.7,
+        "y": 42.9
+      },
+      {
+        "intensity": 9.7,
+        "x": 30,
+        "y": 42.9
+      },
+      {
+        "intensity": 10.7,
+        "x": 34.3,
+        "y": 42.9
+      },
+      {
+        "intensity": 11.2,
+        "x": 38.6,
+        "y": 42.9
+      },
+      {
+        "intensity": 8.8,
         "x": 42.9,
         "y": 42.9
       },
       {
-        "intensity": 13.5,
+        "intensity": 13.3,
         "x": 12.9,
         "y": 47.1
       },
       {
-        "intensity": 38.3,
+        "intensity": 37.4,
         "x": 17.1,
         "y": 47.1
       },
       {
-        "intensity": 20.8,
+        "intensity": 20.6,
         "x": 21.4,
         "y": 47.1
       },
       {
-        "intensity": 9.9,
+        "intensity": 10.1,
         "x": 25.7,
         "y": 47.1
       },
@@ -3307,7 +2016,7 @@
         "y": 51.4
       },
       {
-        "intensity": 11.2,
+        "intensity": 11.1,
         "x": 17.1,
         "y": 51.4
       },
@@ -3320,7 +2029,7 @@
     "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
     "num_elevated_nodes": 3,
     "priority_level": "CRITICAL",
-    "recommended_action": "PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+    "recommended_action": "PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (32.4m, 33.5m).",
     "target_sector": "Sector B3"
   }
 }

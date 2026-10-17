@@ -1,13 +1,17 @@
-
 const fs = require('fs');
 const path = require('path');
-const { MongoClient } = require('mongodb');
+const mongoose = require('mongoose');
+
+// Import Mongoose Models
+const NodeModel = require('./models/Node');
+const TelemetryModel = require('./models/Telemetry');
+const AlertModel = require('./models/Alert');
+const IncidentModel = require('./models/Incident');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const DB_FILE = path.join(DATA_DIR, 'store.json');
 
-const MONGODB_URI = process.env.MONGODB_URI;
-const DB_NAME = process.env.MONGODB_DB_NAME || 'rescuemesh_ai';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/rescuemesh_ai';
 
 if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
@@ -80,9 +84,7 @@ const INITIAL_DATA = {
       }
     }
   ],
-
   telemetry_history: [],
-
   alerts: [
     {
       id: 'alt-init-01',
@@ -92,17 +94,15 @@ const INITIAL_DATA = {
       coordinates: { x: 26.5, y: 38 },
       evidence_score: 78,
       detected_pattern: 'SURVIVOR_RHYTHMIC_TAPPING',
-      multi_node_agreement:
-        'HIGH MULTI-NODE CORRELATION (2 nodes in consensus)',
+      multi_node_agreement: 'HIGH MULTI-NODE CORRELATION (2 nodes in consensus)',
       status: 'PENDING_REVIEW',
       involved_nodes: ['node-alpha', 'node-bravo'],
       estimated_depth_m: 1.4,
-      notes:
-        'Awaiting SAR listening team confirmation. Correlated vibration confirmed.',
-      reviewed_by: null
+      notes: 'Awaiting SAR listening team confirmation. Correlated vibration confirmed.',
+      reviewed_by: null,
+      reviewed_at: null
     }
   ],
-
   incidents: [
     {
       id: 'inc-001',
@@ -115,7 +115,6 @@ const INITIAL_DATA = {
       unresolved_alerts: 1
     }
   ],
-
   fusion_state: {
     priority_level: 'NOMINAL',
     target_sector: 'Sector B2',
@@ -125,224 +124,178 @@ const INITIAL_DATA = {
     correlation_score: 0.2,
     multi_node_agreement: 'BACKGROUND NOMINAL',
     num_elevated_nodes: 0,
-    recommended_action:
-      'STANDBY: Nominal monitoring active across 3 nodes.',
+    recommended_action: 'STANDBY: Nominal monitoring active across 3 nodes.',
     heatmap: []
   }
 };
 
 class Database {
   constructor() {
-    this.data = this.loadData();
-    this.client = null;
-    this.collection = null;
+    this.data = this.loadLocalData();
+    this.isMongoConnected = false;
     this._saveTimer = null;
-    this._saveQueue = Promise.resolve();
-    this._initialized = false;
   }
 
   // Load existing local JSON as a fallback and initial seed.
-  loadData() {
+  loadLocalData() {
     try {
       if (fs.existsSync(DB_FILE)) {
         const raw = fs.readFileSync(DB_FILE, 'utf-8');
-        const parsed = JSON.parse(raw);
-
-        return {
-          ...INITIAL_DATA,
-          ...parsed
-        };
+        return { ...INITIAL_DATA, ...JSON.parse(raw) };
       }
     } catch (error) {
-      console.warn(
-        'Could not read local database:',
-        error.message
-      );
+      console.warn('Could not read local backup file:', error.message);
     }
-
     return JSON.parse(JSON.stringify(INITIAL_DATA));
   }
 
-  // Connect to MongoDB before starting the Express server.
+  // Connect to MongoDB via Mongoose and sync initial collections
   async initialize() {
-    if (this._initialized) {
-      return true;
-    }
-
-    if (!MONGODB_URI) {
-      console.warn(
-        'MONGODB_URI is missing. Using local JSON storage.'
-      );
-      return false;
-    }
-
-    const client = new MongoClient(MONGODB_URI);
-
     try {
-      await client.connect();
-
-      const db = client.db(DB_NAME);
-      const collection = db.collection('app_state');
-
-      const savedState = await collection.findOne({
-        _id: 'main'
+      console.log(`Connecting to MongoDB at: ${MONGODB_URI}...`);
+      await mongoose.connect(MONGODB_URI, {
+        serverSelectionTimeoutMS: 3000
       });
 
-      if (savedState) {
-        const {
-          _id,
-          ...savedData
-        } = savedState;
+      this.isMongoConnected = true;
+      console.log('✅ MongoDB connected successfully via Mongoose!');
 
-        this.data = {
-          ...INITIAL_DATA,
-          ...savedData
-        };
-
-        console.log('Loaded RescueMesh state from MongoDB.');
+      // Sync Nodes from MongoDB
+      const existingNodes = await NodeModel.find({});
+      if (existingNodes.length > 0) {
+        this.data.nodes = existingNodes.map(doc => doc.toObject());
+        console.log(`Loaded ${existingNodes.length} nodes from MongoDB.`);
       } else {
-        // Preserve local data when MongoDB is empty.
-        await collection.insertOne({
-          _id: 'main',
-          ...this.data
-        });
-
-        console.log('Initial state saved to MongoDB.');
+        // Seed initial nodes into MongoDB
+        await NodeModel.insertMany(this.data.nodes);
+        console.log('Seeded initial sensor nodes into MongoDB.');
       }
 
-      // Assign the connection only after initialization succeeds.
-      this.client = client;
-      this.collection = collection;
-      this._initialized = true;
+      // Sync Alerts from MongoDB
+      const existingAlerts = await AlertModel.find({}).sort({ timestamp: -1 }).limit(100);
+      if (existingAlerts.length > 0) {
+        this.data.alerts = existingAlerts.map(doc => doc.toObject());
+      } else if (this.data.alerts.length > 0) {
+        await AlertModel.insertMany(this.data.alerts);
+      }
 
-      this.writeLocalBackup(this.data);
+      // Sync Incidents from MongoDB
+      const existingIncidents = await IncidentModel.find({});
+      if (existingIncidents.length > 0) {
+        this.data.incidents = existingIncidents.map(doc => doc.toObject());
+      } else if (this.data.incidents.length > 0) {
+        await IncidentModel.insertMany(this.data.incidents);
+      }
 
-      console.log(`MongoDB connected: ${DB_NAME}`);
+      // Sync recent Telemetry
+      const recentTelemetry = await TelemetryModel.find({}).sort({ timestamp: -1 }).limit(200);
+      if (recentTelemetry.length > 0) {
+        this.data.telemetry_history = recentTelemetry.reverse().map(doc => doc.toObject());
+      }
+
       return true;
     } catch (error) {
-      await client.close().catch(() => {});
-
-      console.error('MongoDB initialization failed:', error.message);
-      throw error;
+      this.isMongoConnected = false;
+      console.warn('⚠️  MongoDB connection skipped/unavailable:', error.message);
+      console.log('ℹ️  Running in Local Persistent Store mode (data/store.json). All features fully operational.');
+      return false;
     }
   }
 
-  // Save a local backup without blocking API responses.
-  writeLocalBackup(data) {
-    try {
-      fs.writeFileSync(
-        DB_FILE,
-        JSON.stringify(data, null, 2),
-        'utf-8'
-      );
-    } catch (error) {
-      console.warn('Local JSON backup failed:', error.message);
-    }
-  }
-
-  // Debounced persistence to MongoDB and local JSON.
-  saveData(data) {
-    if (this._saveTimer) {
-      clearTimeout(this._saveTimer);
-    }
-
+  // Save local JSON backup
+  writeLocalBackup() {
+    if (this._saveTimer) clearTimeout(this._saveTimer);
     this._saveTimer = setTimeout(() => {
-      const snapshot = JSON.parse(
-        JSON.stringify(data || this.data)
-      );
-
-      this.writeLocalBackup(snapshot);
-
-      if (!this.collection) {
-        return;
+      try {
+        fs.writeFileSync(DB_FILE, JSON.stringify(this.data, null, 2), 'utf-8');
+      } catch (err) {
+        // Safe against temporary file lock
       }
-
-      // Serialize writes so older snapshots do not overwrite newer ones.
-      this._saveQueue = this._saveQueue
-        .then(() =>
-          this.collection.replaceOne(
-            { _id: 'main' },
-            { _id: 'main', ...snapshot },
-            { upsert: true }
-          )
-        )
-        .catch(error => {
-          console.error('MongoDB save failed:', error.message);
-        });
     }, 300);
   }
 
-  // Nodes
+  // --- NODES COLLECTION ---
   getNodes() {
     return this.data.nodes;
   }
 
   getNode(id) {
-    return this.data.nodes.find(node => node.id === id);
+    return this.data.nodes.find(n => n.id === id);
   }
 
   updateNode(id, update) {
-    const index = this.data.nodes.findIndex(
-      node => node.id === id
-    );
+    const idx = this.data.nodes.findIndex(n => n.id === id);
+    if (idx !== -1) {
+      this.data.nodes[idx] = {
+        ...this.data.nodes[idx],
+        ...update,
+        last_seen: new Date().toISOString()
+      };
 
-    if (index === -1) {
-      return null;
+      // Async write to MongoDB
+      if (this.isMongoConnected) {
+        NodeModel.findOneAndUpdate({ id }, this.data.nodes[idx], { upsert: true }).catch(err => {
+          console.error('[MongoDB Error] Update Node failed:', err.message);
+        });
+      }
+
+      this.writeLocalBackup();
+      return this.data.nodes[idx];
     }
-
-    this.data.nodes[index] = {
-      ...this.data.nodes[index],
-      ...update,
-      last_seen: new Date().toISOString()
-    };
-
-    this.saveData();
-    return this.data.nodes[index];
+    return null;
   }
 
   addNode(node) {
     const existing = this.getNode(node.id);
-
     if (existing) {
       return this.updateNode(node.id, node);
     }
 
     this.data.nodes.push(node);
-    this.saveData();
 
+    if (this.isMongoConnected) {
+      NodeModel.create(node).catch(err => {
+        console.error('[MongoDB Error] Add Node failed:', err.message);
+      });
+    }
+
+    this.writeLocalBackup();
     return node;
   }
 
-  // Telemetry
+  // --- TELEMETRY READINGS COLLECTION ---
   addTelemetry(reading) {
     const entry = {
       ...reading,
       timestamp: reading.timestamp || new Date().toISOString()
     };
 
+    // In-memory ring buffer (keep last 1500 for live graphs)
     this.data.telemetry_history.push(entry);
-
     if (this.data.telemetry_history.length > 1500) {
       this.data.telemetry_history.shift();
     }
 
-    this.saveData();
+    // Persist reading in MongoDB Telemetry Collection
+    if (this.isMongoConnected) {
+      TelemetryModel.create(entry).catch(err => {
+        console.error('[MongoDB Error] Save Telemetry failed:', err.message);
+      });
+    }
+
+    this.writeLocalBackup();
     return entry;
   }
 
   getTelemetryHistory(nodeId, limit = 60) {
-    let history = this.data.telemetry_history;
-
+    let hist = this.data.telemetry_history;
     if (nodeId) {
-      history = history.filter(
-        item => item.node_id === nodeId
-      );
+      hist = hist.filter(h => h.node_id === nodeId);
     }
-
-    return history.slice(-limit);
+    return hist.slice(-limit);
   }
 
-  // Alerts
+  // --- ALERTS COLLECTION ---
   getAlerts() {
     return this.data.alerts;
   }
@@ -356,81 +309,47 @@ class Database {
     };
 
     this.data.alerts.unshift(newAlert);
-    this.saveData();
 
+    if (this.isMongoConnected) {
+      AlertModel.create(newAlert).catch(err => {
+        console.error('[MongoDB Error] Create Alert failed:', err.message);
+      });
+    }
+
+    this.writeLocalBackup();
     return newAlert;
   }
 
   updateAlert(id, update) {
-    const index = this.data.alerts.findIndex(
-      alert => alert.id === id
-    );
+    const idx = this.data.alerts.findIndex(a => a.id === id);
+    if (idx !== -1) {
+      this.data.alerts[idx] = { ...this.data.alerts[idx], ...update };
 
-    if (index === -1) {
-      return null;
+      if (this.isMongoConnected) {
+        AlertModel.findOneAndUpdate({ id }, this.data.alerts[idx], { upsert: true }).catch(err => {
+          console.error('[MongoDB Error] Update Alert failed:', err.message);
+        });
+      }
+
+      this.writeLocalBackup();
+      return this.data.alerts[idx];
     }
-
-    this.data.alerts[index] = {
-      ...this.data.alerts[index],
-      ...update
-    };
-
-    this.saveData();
-    return this.data.alerts[index];
+    return null;
   }
 
-  // Incidents
+  // --- INCIDENTS COLLECTION ---
   getIncidents() {
     return this.data.incidents;
   }
 
-  // Sensor fusion
+  // --- FUSION STATE (EPHEMERAL / CACHED) ---
   getFusionState() {
     return this.data.fusion_state;
   }
 
   setFusionState(state) {
     this.data.fusion_state = state;
-    this.saveData();
-
     return this.data.fusion_state;
-  }
-
-  // Wait for queued writes before a graceful shutdown.
-  async close() {
-    if (this._saveTimer) {
-      clearTimeout(this._saveTimer);
-      this._saveTimer = null;
-
-      const snapshot = JSON.parse(
-        JSON.stringify(this.data)
-      );
-
-      this.writeLocalBackup(snapshot);
-
-      if (this.collection) {
-        this._saveQueue = this._saveQueue
-          .then(() =>
-            this.collection.replaceOne(
-              { _id: 'main' },
-              { _id: 'main', ...snapshot },
-              { upsert: true }
-            )
-          )
-          .catch(error => {
-            console.error('Final MongoDB save failed:', error.message);
-          });
-      }
-    }
-
-    await this._saveQueue;
-
-    if (this.client) {
-      await this.client.close();
-      this.client = null;
-      this.collection = null;
-      this._initialized = false;
-    }
   }
 }
 

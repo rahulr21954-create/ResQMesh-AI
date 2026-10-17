@@ -1,29 +1,17 @@
+
+const dns = require('dns');
+
+dns.setServers(['8.8.8.8', '8.8.4.4']);
+
 require('dotenv').config();
+
 const express = require('express');
 const http = require('http');
 const { Server } = require('socket.io');
 const cors = require('cors');
+
 const db = require('./db');
 const fusionEngine = require('./services/fusionEngine');
-const database = require('./db.js');
-
-async function startServer() {
-  try {
-    await database.initialize();
-
-    const PORT = process.env.PORT || 5000;
-
-    app.listen(PORT, '0.0.0.0', () => {
-      console.log(`Server running on port ${PORT}`);
-    });
-  } catch (error) {
-    console.error('Server startup failed:', error);
-    process.exit(1);
-  }
-}
-
-startServer();
-
 
 const app = express();
 const server = http.createServer(app);
@@ -54,37 +42,35 @@ app.use('/api/telemetry', telemetryRouter);
 app.use('/api/alerts', alertsRouter);
 app.use('/api/simulation', simulationRouter);
 
-app.post("/api/sensors", (req, res) => {
-  console.log("Received RescueMesh data:", req.body);
+// Route /api/sensors to the full telemetry ingestion & AI fusion engine
+app.use('/api/sensors', telemetryRouter);
 
-  res.status(200).json({
+// Fusion state
+app.get('/api/fusion', (req, res) => {
+  res.json({
     success: true,
-    message: "Sensor data received successfully",
-    nodeId: req.body.nodeId
+    data: db.getFusionState()
   });
 });
 
-
-// GET /api/fusion - Get current sensor fusion state & priority zone
-app.get('/api/fusion', (req, res) => {
-  res.json({ success: true, data: db.getFusionState() });
-});
-
-// GET /api/status - Health check
+// Health check
 app.get('/api/status', (req, res) => {
   res.json({
     status: 'ONLINE',
     system: 'RescueMesh Gateway & Central Node Engine',
     timestamp: new Date().toISOString(),
-    nodes_connected: db.getNodes().filter(n => n.status === 'ONLINE').length
+    nodes_connected: db.getNodes().filter(
+      node => node.status === 'ONLINE'
+    ).length
   });
 });
 
-// Socket.io connection handler
-io.on('connection', (socket) => {
-  console.log(`[Socket] Rescuer terminal connected: ${socket.id}`);
-  
-  // Send initial state snapshot immediately
+// Socket.IO
+io.on('connection', socket => {
+  console.log(
+    `[Socket] Rescuer terminal connected: ${socket.id}`
+  );
+
   socket.emit('initial_state', {
     nodes: db.getNodes(),
     alerts: db.getAlerts(),
@@ -93,43 +79,68 @@ io.on('connection', (socket) => {
   });
 
   socket.on('disconnect', () => {
-    console.log(`[Socket] Rescuer terminal disconnected: ${socket.id}`);
+    console.log(
+      `[Socket] Rescuer terminal disconnected: ${socket.id}`
+    );
   });
 });
 
-// Subtle background sensor jitter loop (simulates real physical baseline ADC noise)
-setInterval(() => {
+// Background sensor simulation
+const jitterTimer = setInterval(() => {
   const nodes = db.getNodes();
+
   nodes.forEach(node => {
-    if (node.status === "ONLINE" && node.latest_telemetry) {
+    if (
+      node.status === 'ONLINE' &&
+      node.latest_telemetry &&
+      node.latest_telemetry.pattern === 'NORMAL_BACKGROUND'
+    ) {
       const cur = node.latest_telemetry;
-      // If it's normal background, produce subtle physical ADC fluctuations
-      if (cur.pattern === "NORMAL_BACKGROUND") {
-        cur.audio_level = +(35.0 + Math.random() * 5.0).toFixed(1);
-        cur.vibration_rms = +(0.018 + Math.random() * 0.012).toFixed(3);
-        cur.vibration_peak = +(cur.vibration_rms * (1.3 + Math.random() * 0.4)).toFixed(3);
-        cur.temperature = +(23.8 + Math.random() * 0.4).toFixed(1);
-        
-        db.addTelemetry({
-          node_id: node.id,
-          ...cur,
-          timestamp: new Date().toISOString()
-        });
-      }
+
+      cur.audio_level = +(35 + Math.random() * 5).toFixed(1);
+      cur.vibration_rms = +(0.018 + Math.random() * 0.012).toFixed(3);
+      cur.vibration_peak = +(
+        cur.vibration_rms * (1.3 + Math.random() * 0.4)
+      ).toFixed(3);
+      cur.temperature = +(23.8 + Math.random() * 0.4).toFixed(1);
+
+      db.addTelemetry({
+        node_id: node.id,
+        ...cur,
+        timestamp: new Date().toISOString()
+      });
     }
   });
 
   io.emit('nodes_update', db.getNodes());
 }, 3000);
 
-const PORT = process.env.PORT || 5000;
-server.listen(PORT, () => {
-  console.log(`=================================================`);
-  console.log(`RescueMesh Gateway & Backend Server Started!`);
-  console.log(`Port: http://localhost:${PORT}`);
-  console.log(`WebSocket: ws://localhost:${PORT}`);
-  console.log(`=================================================`);
-  
-  // Initial fusion run
-  fusionEngine.runFusion();
-});
+// Start database first, then start HTTP server exactly once.
+async function startServer() {
+  try {
+    console.log(
+      'MongoDB URI loaded:',
+      Boolean(process.env.MONGODB_URI)
+    );
+
+    await db.initialize();
+
+    const PORT = process.env.PORT || 5000;
+
+    server.listen(PORT, '0.0.0.0', () => {
+      console.log('==============================================');
+      console.log('RescueMesh Gateway & Backend Server Started!');
+      console.log(`Port: ${PORT}`);
+      console.log('WebSocket: enabled');
+      console.log('==============================================');
+
+      fusionEngine.runFusion();
+    });
+  } catch (error) {
+    clearInterval(jitterTimer);
+    console.error('Server startup failed:', error.message);
+    process.exit(1);
+  }
+}
+
+startServer();
