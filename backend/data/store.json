@@ -2624,6 +2624,90 @@
   ],
   "alerts": [
     {
+      "id": "alt-1792220482758",
+      "timestamp": "2026-10-17T07:01:22.758Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m)."
+    },
+    {
+      "id": "alt-1792220447825",
+      "timestamp": "2026-10-17T07:00:47.825Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m)."
+    },
+    {
+      "id": "alt-1792220387695",
+      "timestamp": "2026-10-17T06:59:47.695Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m)."
+    },
+    {
+      "id": "alt-1792220350525",
+      "timestamp": "2026-10-17T06:59:10.525Z",
+      "status": "PENDING_REVIEW",
+      "priority_level": "CRITICAL",
+      "sector": "Sector B3",
+      "coordinates": {
+        "x": 31.7,
+        "y": 34
+      },
+      "evidence_score": 94,
+      "detected_pattern": "SURVIVOR_RHYTHMIC_TAPPING",
+      "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+      "involved_nodes": [
+        "node-alpha",
+        "node-bravo",
+        "node-charlie"
+      ],
+      "estimated_depth_m": 1.9,
+      "notes": "AI Sensor-Fusion triggered: PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m)."
+    },
+    {
       "id": "alt-1792216991087",
       "timestamp": "2026-10-17T06:03:11.087Z",
       "status": "PENDING_REVIEW",
@@ -2999,1124 +3083,244 @@
     }
   ],
   "fusion_state": {
-    "priority_level": "CRITICAL",
-    "target_sector": "Sector B2",
-    "estimated_coords": {
-      "x": 27.9,
-      "y": 33.9
-    },
-    "estimated_depth_m": 0.8,
-    "evidence_score": 95,
     "correlation_score": 0.96,
-    "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes confirmed)",
-    "num_elevated_nodes": 3,
-    "recommended_action": "PRIORITY RESCUE DISPATCH: Investigate Sector B2 immediately at (27.9m, 33.9m).",
+    "estimated_coords": {
+      "x": 31.7,
+      "y": 34
+    },
+    "estimated_depth_m": 1.9,
+    "evidence_score": 94,
     "heatmap": [
       {
-        "x": 12,
-        "y": 0,
-        "intensity": 5
+        "intensity": 13.6,
+        "x": 21.4,
+        "y": 12.9
       },
       {
-        "x": 16,
-        "y": 0,
-        "intensity": 6
+        "intensity": 26.6,
+        "x": 25.7,
+        "y": 12.9
       },
       {
-        "x": 20,
-        "y": 0,
-        "intensity": 7
+        "intensity": 10.3,
+        "x": 30,
+        "y": 12.9
       },
       {
-        "x": 24,
-        "y": 0,
-        "intensity": 7
+        "intensity": 14.1,
+        "x": 21.4,
+        "y": 17.1
       },
       {
-        "x": 28,
-        "y": 0,
-        "intensity": 7
+        "intensity": 27.2,
+        "x": 25.7,
+        "y": 17.1
       },
       {
-        "x": 32,
-        "y": 0,
-        "intensity": 6
+        "intensity": 11,
+        "x": 30,
+        "y": 17.1
       },
       {
-        "x": 36,
-        "y": 0,
-        "intensity": 6
+        "intensity": 8.2,
+        "x": 21.4,
+        "y": 21.4
       },
       {
-        "x": 40,
-        "y": 0,
-        "intensity": 5
+        "intensity": 9.7,
+        "x": 25.7,
+        "y": 21.4
       },
       {
-        "x": 8,
-        "y": 4,
-        "intensity": 5
+        "intensity": 8.4,
+        "x": 30,
+        "y": 21.4
       },
       {
-        "x": 12,
-        "y": 4,
-        "intensity": 6
+        "intensity": 8.1,
+        "x": 30,
+        "y": 25.7
       },
       {
-        "x": 16,
-        "y": 4,
-        "intensity": 8
+        "intensity": 8.9,
+        "x": 34.3,
+        "y": 25.7
       },
       {
-        "x": 20,
-        "y": 4,
-        "intensity": 9
+        "intensity": 8.9,
+        "x": 38.6,
+        "y": 25.7
       },
       {
-        "x": 24,
-        "y": 4,
-        "intensity": 10
+        "intensity": 9.8,
+        "x": 30,
+        "y": 30
       },
       {
-        "x": 28,
-        "y": 4,
-        "intensity": 10
+        "intensity": 14.7,
+        "x": 34.3,
+        "y": 30
       },
       {
-        "x": 32,
-        "y": 4,
-        "intensity": 9
+        "intensity": 18.5,
+        "x": 38.6,
+        "y": 30
       },
       {
-        "x": 36,
-        "y": 4,
-        "intensity": 7
+        "intensity": 11.9,
+        "x": 42.9,
+        "y": 30
       },
       {
-        "x": 40,
-        "y": 4,
-        "intensity": 6
+        "intensity": 8.6,
+        "x": 25.7,
+        "y": 34.3
       },
       {
-        "x": 44,
-        "y": 4,
-        "intensity": 5
+        "intensity": 11.7,
+        "x": 30,
+        "y": 34.3
       },
       {
-        "x": 8,
-        "y": 8,
-        "intensity": 6
+        "intensity": 26.6,
+        "x": 34.3,
+        "y": 34.3
       },
       {
-        "x": 12,
-        "y": 8,
-        "intensity": 8
+        "intensity": 100,
+        "x": 38.6,
+        "y": 34.3
       },
       {
-        "x": 16,
-        "y": 8,
-        "intensity": 10
+        "intensity": 18.5,
+        "x": 42.9,
+        "y": 34.3
       },
       {
-        "x": 20,
-        "y": 8,
-        "intensity": 14
+        "intensity": 8.1,
+        "x": 47.1,
+        "y": 34.3
       },
       {
-        "x": 24,
-        "y": 8,
-        "intensity": 18
+        "intensity": 8.7,
+        "x": 12.9,
+        "y": 38.6
       },
       {
-        "x": 28,
-        "y": 8,
-        "intensity": 16
+        "intensity": 12.1,
+        "x": 17.1,
+        "y": 38.6
       },
       {
-        "x": 32,
-        "y": 8,
-        "intensity": 12
+        "intensity": 11.4,
+        "x": 21.4,
+        "y": 38.6
       },
       {
-        "x": 36,
-        "y": 8,
-        "intensity": 9
+        "intensity": 9.8,
+        "x": 25.7,
+        "y": 38.6
       },
       {
-        "x": 40,
-        "y": 8,
-        "intensity": 8
+        "intensity": 11.1,
+        "x": 30,
+        "y": 38.6
       },
       {
-        "x": 44,
-        "y": 8,
-        "intensity": 6
+        "intensity": 18.5,
+        "x": 34.3,
+        "y": 38.6
       },
       {
-        "x": 48,
-        "y": 8,
-        "intensity": 5
+        "intensity": 27.4,
+        "x": 38.6,
+        "y": 38.6
       },
       {
-        "x": 4,
-        "y": 12,
-        "intensity": 5
+        "intensity": 14.3,
+        "x": 42.9,
+        "y": 38.6
       },
       {
-        "x": 8,
-        "y": 12,
-        "intensity": 7
+        "intensity": 13.7,
+        "x": 12.9,
+        "y": 42.9
       },
       {
-        "x": 12,
-        "y": 12,
-        "intensity": 9
+        "intensity": 38.6,
+        "x": 17.1,
+        "y": 42.9
       },
       {
-        "x": 16,
-        "y": 12,
-        "intensity": 13
+        "intensity": 21.4,
+        "x": 21.4,
+        "y": 42.9
       },
       {
-        "x": 20,
-        "y": 12,
-        "intensity": 22
+        "intensity": 10.9,
+        "x": 25.7,
+        "y": 42.9
       },
       {
-        "x": 24,
-        "y": 12,
-        "intensity": 43
+        "intensity": 9.2,
+        "x": 30,
+        "y": 42.9
       },
       {
-        "x": 28,
-        "y": 12,
-        "intensity": 32
+        "intensity": 10.1,
+        "x": 34.3,
+        "y": 42.9
       },
       {
-        "x": 32,
-        "y": 12,
-        "intensity": 17
+        "intensity": 10.6,
+        "x": 38.6,
+        "y": 42.9
       },
       {
-        "x": 36,
-        "y": 12,
-        "intensity": 12
+        "intensity": 8.2,
+        "x": 42.9,
+        "y": 42.9
       },
       {
-        "x": 40,
-        "y": 12,
-        "intensity": 9
+        "intensity": 13.5,
+        "x": 12.9,
+        "y": 47.1
       },
       {
-        "x": 44,
-        "y": 12,
-        "intensity": 7
+        "intensity": 38.3,
+        "x": 17.1,
+        "y": 47.1
       },
       {
-        "x": 48,
-        "y": 12,
-        "intensity": 6
+        "intensity": 20.8,
+        "x": 21.4,
+        "y": 47.1
       },
       {
-        "x": 52,
-        "y": 12,
-        "intensity": 5
+        "intensity": 9.9,
+        "x": 25.7,
+        "y": 47.1
       },
       {
-        "x": 4,
-        "y": 16,
-        "intensity": 6
+        "intensity": 8,
+        "x": 12.9,
+        "y": 51.4
       },
       {
-        "x": 8,
-        "y": 16,
-        "intensity": 7
+        "intensity": 11.2,
+        "x": 17.1,
+        "y": 51.4
       },
       {
-        "x": 12,
-        "y": 16,
-        "intensity": 10
-      },
-      {
-        "x": 16,
-        "y": 16,
-        "intensity": 14
-      },
-      {
-        "x": 20,
-        "y": 16,
-        "intensity": 27
-      },
-      {
-        "x": 24,
-        "y": 16,
-        "intensity": 87
-      },
-      {
-        "x": 28,
-        "y": 16,
-        "intensity": 45
-      },
-      {
-        "x": 32,
-        "y": 16,
-        "intensity": 20
-      },
-      {
-        "x": 36,
-        "y": 16,
-        "intensity": 14
-      },
-      {
-        "x": 40,
-        "y": 16,
-        "intensity": 11
-      },
-      {
-        "x": 44,
-        "y": 16,
-        "intensity": 9
-      },
-      {
-        "x": 48,
-        "y": 16,
-        "intensity": 7
-      },
-      {
-        "x": 52,
-        "y": 16,
-        "intensity": 6
-      },
-      {
-        "x": 56,
-        "y": 16,
-        "intensity": 5
-      },
-      {
-        "x": 0,
-        "y": 20,
-        "intensity": 5
-      },
-      {
-        "x": 4,
-        "y": 20,
-        "intensity": 6
-      },
-      {
-        "x": 8,
-        "y": 20,
-        "intensity": 8
-      },
-      {
-        "x": 12,
-        "y": 20,
-        "intensity": 10
-      },
-      {
-        "x": 16,
-        "y": 20,
-        "intensity": 14
-      },
-      {
-        "x": 20,
-        "y": 20,
-        "intensity": 20
-      },
-      {
-        "x": 24,
-        "y": 20,
-        "intensity": 29
-      },
-      {
-        "x": 28,
-        "y": 20,
-        "intensity": 26
-      },
-      {
-        "x": 32,
-        "y": 20,
-        "intensity": 19
-      },
-      {
-        "x": 36,
-        "y": 20,
-        "intensity": 15
-      },
-      {
-        "x": 40,
-        "y": 20,
-        "intensity": 13
-      },
-      {
-        "x": 44,
-        "y": 20,
-        "intensity": 11
-      },
-      {
-        "x": 48,
-        "y": 20,
-        "intensity": 9
-      },
-      {
-        "x": 52,
-        "y": 20,
-        "intensity": 7
-      },
-      {
-        "x": 56,
-        "y": 20,
-        "intensity": 6
-      },
-      {
-        "x": 0,
-        "y": 24,
-        "intensity": 5
-      },
-      {
-        "x": 4,
-        "y": 24,
-        "intensity": 7
-      },
-      {
-        "x": 8,
-        "y": 24,
-        "intensity": 8
-      },
-      {
-        "x": 12,
-        "y": 24,
-        "intensity": 10
-      },
-      {
-        "x": 16,
-        "y": 24,
-        "intensity": 13
-      },
-      {
-        "x": 20,
-        "y": 24,
-        "intensity": 16
-      },
-      {
-        "x": 24,
-        "y": 24,
-        "intensity": 18
-      },
-      {
-        "x": 28,
-        "y": 24,
-        "intensity": 19
-      },
-      {
-        "x": 32,
-        "y": 24,
-        "intensity": 19
-      },
-      {
-        "x": 36,
-        "y": 24,
-        "intensity": 18
-      },
-      {
-        "x": 40,
-        "y": 24,
-        "intensity": 16
-      },
-      {
-        "x": 44,
-        "y": 24,
-        "intensity": 13
-      },
-      {
-        "x": 48,
-        "y": 24,
-        "intensity": 10
-      },
-      {
-        "x": 52,
-        "y": 24,
-        "intensity": 8
-      },
-      {
-        "x": 56,
-        "y": 24,
-        "intensity": 6
-      },
-      {
-        "x": 60,
-        "y": 24,
-        "intensity": 5
-      },
-      {
-        "x": 0,
-        "y": 28,
-        "intensity": 6
-      },
-      {
-        "x": 4,
-        "y": 28,
-        "intensity": 7
-      },
-      {
-        "x": 8,
-        "y": 28,
-        "intensity": 9
-      },
-      {
-        "x": 12,
-        "y": 28,
-        "intensity": 11
-      },
-      {
-        "x": 16,
-        "y": 28,
-        "intensity": 13
-      },
-      {
-        "x": 20,
-        "y": 28,
-        "intensity": 15
-      },
-      {
-        "x": 24,
-        "y": 28,
-        "intensity": 17
-      },
-      {
-        "x": 28,
-        "y": 28,
-        "intensity": 19
-      },
-      {
-        "x": 32,
-        "y": 28,
-        "intensity": 23
-      },
-      {
-        "x": 36,
-        "y": 28,
-        "intensity": 27
-      },
-      {
-        "x": 40,
-        "y": 28,
-        "intensity": 26
-      },
-      {
-        "x": 44,
-        "y": 28,
-        "intensity": 19
-      },
-      {
-        "x": 48,
-        "y": 28,
-        "intensity": 13
-      },
-      {
-        "x": 52,
-        "y": 28,
-        "intensity": 9
-      },
-      {
-        "x": 56,
-        "y": 28,
-        "intensity": 7
-      },
-      {
-        "x": 60,
-        "y": 28,
-        "intensity": 5
-      },
-      {
-        "x": 0,
-        "y": 32,
-        "intensity": 6
-      },
-      {
-        "x": 4,
-        "y": 32,
-        "intensity": 8
-      },
-      {
-        "x": 8,
-        "y": 32,
-        "intensity": 10
-      },
-      {
-        "x": 12,
-        "y": 32,
-        "intensity": 12
-      },
-      {
-        "x": 16,
-        "y": 32,
-        "intensity": 14
-      },
-      {
-        "x": 20,
-        "y": 32,
-        "intensity": 16
-      },
-      {
-        "x": 24,
-        "y": 32,
-        "intensity": 18
-      },
-      {
-        "x": 28,
-        "y": 32,
-        "intensity": 21
-      },
-      {
-        "x": 32,
-        "y": 32,
-        "intensity": 30
-      },
-      {
-        "x": 36,
-        "y": 32,
-        "intensity": 57
-      },
-      {
-        "x": 40,
-        "y": 32,
-        "intensity": 56
-      },
-      {
-        "x": 44,
-        "y": 32,
-        "intensity": 27
-      },
-      {
-        "x": 48,
-        "y": 32,
-        "intensity": 15
-      },
-      {
-        "x": 52,
-        "y": 32,
-        "intensity": 10
-      },
-      {
-        "x": 56,
-        "y": 32,
-        "intensity": 7
-      },
-      {
-        "x": 60,
-        "y": 32,
-        "intensity": 6
-      },
-      {
-        "x": 0,
-        "y": 36,
-        "intensity": 7
-      },
-      {
-        "x": 4,
-        "y": 36,
-        "intensity": 9
-      },
-      {
-        "x": 8,
-        "y": 36,
-        "intensity": 11
-      },
-      {
-        "x": 12,
-        "y": 36,
-        "intensity": 15
-      },
-      {
-        "x": 16,
-        "y": 36,
-        "intensity": 19
-      },
-      {
-        "x": 20,
-        "y": 36,
-        "intensity": 21
-      },
-      {
-        "x": 24,
-        "y": 36,
-        "intensity": 21
-      },
-      {
-        "x": 28,
-        "y": 36,
-        "intensity": 23
-      },
-      {
-        "x": 32,
-        "y": 36,
-        "intensity": 34
-      },
-      {
-        "x": 36,
-        "y": 36,
-        "intensity": 90
-      },
-      {
-        "x": 40,
-        "y": 36,
-        "intensity": 89
-      },
-      {
-        "x": 44,
-        "y": 36,
-        "intensity": 30
-      },
-      {
-        "x": 48,
-        "y": 36,
-        "intensity": 16
-      },
-      {
-        "x": 52,
-        "y": 36,
-        "intensity": 10
-      },
-      {
-        "x": 56,
-        "y": 36,
-        "intensity": 7
-      },
-      {
-        "x": 60,
-        "y": 36,
-        "intensity": 6
-      },
-      {
-        "x": 0,
-        "y": 40,
-        "intensity": 7
-      },
-      {
-        "x": 4,
-        "y": 40,
-        "intensity": 9
-      },
-      {
-        "x": 8,
-        "y": 40,
-        "intensity": 14
-      },
-      {
-        "x": 12,
-        "y": 40,
-        "intensity": 21
-      },
-      {
-        "x": 16,
-        "y": 40,
-        "intensity": 34
-      },
-      {
-        "x": 20,
-        "y": 40,
-        "intensity": 35
-      },
-      {
-        "x": 24,
-        "y": 40,
-        "intensity": 26
-      },
-      {
-        "x": 28,
-        "y": 40,
-        "intensity": 23
-      },
-      {
-        "x": 32,
-        "y": 40,
-        "intensity": 27
-      },
-      {
-        "x": 36,
-        "y": 40,
-        "intensity": 37
-      },
-      {
-        "x": 40,
-        "y": 40,
-        "intensity": 36
-      },
-      {
-        "x": 44,
-        "y": 40,
-        "intensity": 22
-      },
-      {
-        "x": 48,
-        "y": 40,
-        "intensity": 14
-      },
-      {
-        "x": 52,
-        "y": 40,
-        "intensity": 10
-      },
-      {
-        "x": 56,
-        "y": 40,
-        "intensity": 7
-      },
-      {
-        "x": 60,
-        "y": 40,
-        "intensity": 5
-      },
-      {
-        "x": 0,
-        "y": 44,
-        "intensity": 7
-      },
-      {
-        "x": 4,
-        "y": 44,
-        "intensity": 10
-      },
-      {
-        "x": 8,
-        "y": 44,
-        "intensity": 15
-      },
-      {
-        "x": 12,
-        "y": 44,
-        "intensity": 28
-      },
-      {
-        "x": 16,
-        "y": 44,
-        "intensity": 81
-      },
-      {
-        "x": 20,
-        "y": 44,
-        "intensity": 83
-      },
-      {
-        "x": 24,
-        "y": 44,
-        "intensity": 31
-      },
-      {
-        "x": 28,
-        "y": 44,
-        "intensity": 21
-      },
-      {
-        "x": 32,
-        "y": 44,
-        "intensity": 20
-      },
-      {
-        "x": 36,
-        "y": 44,
-        "intensity": 21
-      },
-      {
-        "x": 40,
-        "y": 44,
-        "intensity": 19
-      },
-      {
-        "x": 44,
-        "y": 44,
-        "intensity": 15
-      },
-      {
-        "x": 48,
-        "y": 44,
-        "intensity": 11
-      },
-      {
-        "x": 52,
-        "y": 44,
-        "intensity": 8
-      },
-      {
-        "x": 56,
-        "y": 44,
-        "intensity": 6
-      },
-      {
-        "x": 60,
-        "y": 44,
-        "intensity": 5
-      },
-      {
-        "x": 0,
-        "y": 48,
-        "intensity": 7
-      },
-      {
-        "x": 4,
-        "y": 48,
-        "intensity": 9
-      },
-      {
-        "x": 8,
-        "y": 48,
-        "intensity": 14
-      },
-      {
-        "x": 12,
-        "y": 48,
-        "intensity": 24
-      },
-      {
-        "x": 16,
-        "y": 48,
-        "intensity": 50
-      },
-      {
-        "x": 20,
-        "y": 48,
-        "intensity": 51
-      },
-      {
-        "x": 24,
-        "y": 48,
-        "intensity": 27
-      },
-      {
-        "x": 28,
-        "y": 48,
-        "intensity": 18
-      },
-      {
-        "x": 32,
-        "y": 48,
-        "intensity": 15
-      },
-      {
-        "x": 36,
-        "y": 48,
-        "intensity": 14
-      },
-      {
-        "x": 40,
-        "y": 48,
-        "intensity": 13
-      },
-      {
-        "x": 44,
-        "y": 48,
-        "intensity": 11
-      },
-      {
-        "x": 48,
-        "y": 48,
-        "intensity": 9
-      },
-      {
-        "x": 52,
-        "y": 48,
-        "intensity": 7
-      },
-      {
-        "x": 56,
-        "y": 48,
-        "intensity": 6
-      },
-      {
-        "x": 0,
-        "y": 52,
-        "intensity": 6
-      },
-      {
-        "x": 4,
-        "y": 52,
-        "intensity": 8
-      },
-      {
-        "x": 8,
-        "y": 52,
-        "intensity": 11
-      },
-      {
-        "x": 12,
-        "y": 52,
-        "intensity": 16
-      },
-      {
-        "x": 16,
-        "y": 52,
-        "intensity": 22
-      },
-      {
-        "x": 20,
-        "y": 52,
-        "intensity": 23
-      },
-      {
-        "x": 24,
-        "y": 52,
-        "intensity": 18
-      },
-      {
-        "x": 28,
-        "y": 52,
-        "intensity": 14
-      },
-      {
-        "x": 32,
-        "y": 52,
-        "intensity": 12
-      },
-      {
-        "x": 36,
-        "y": 52,
-        "intensity": 11
-      },
-      {
-        "x": 40,
-        "y": 52,
-        "intensity": 10
-      },
-      {
-        "x": 44,
-        "y": 52,
-        "intensity": 8
-      },
-      {
-        "x": 48,
-        "y": 52,
-        "intensity": 7
-      },
-      {
-        "x": 52,
-        "y": 52,
-        "intensity": 6
-      },
-      {
-        "x": 0,
-        "y": 56,
-        "intensity": 5
-      },
-      {
-        "x": 4,
-        "y": 56,
-        "intensity": 7
-      },
-      {
-        "x": 8,
-        "y": 56,
-        "intensity": 9
-      },
-      {
-        "x": 12,
-        "y": 56,
-        "intensity": 11
-      },
-      {
-        "x": 16,
-        "y": 56,
-        "intensity": 13
-      },
-      {
-        "x": 20,
-        "y": 56,
-        "intensity": 13
-      },
-      {
-        "x": 24,
-        "y": 56,
-        "intensity": 12
-      },
-      {
-        "x": 28,
-        "y": 56,
-        "intensity": 11
-      },
-      {
-        "x": 32,
-        "y": 56,
-        "intensity": 9
-      },
-      {
-        "x": 36,
-        "y": 56,
-        "intensity": 8
-      },
-      {
-        "x": 40,
-        "y": 56,
-        "intensity": 8
-      },
-      {
-        "x": 44,
-        "y": 56,
-        "intensity": 7
-      },
-      {
-        "x": 48,
-        "y": 56,
-        "intensity": 6
-      },
-      {
-        "x": 52,
-        "y": 56,
-        "intensity": 5
-      },
-      {
-        "x": 4,
-        "y": 60,
-        "intensity": 6
-      },
-      {
-        "x": 8,
-        "y": 60,
-        "intensity": 7
-      },
-      {
-        "x": 12,
-        "y": 60,
-        "intensity": 8
-      },
-      {
-        "x": 16,
-        "y": 60,
-        "intensity": 9
-      },
-      {
-        "x": 20,
-        "y": 60,
-        "intensity": 9
-      },
-      {
-        "x": 24,
-        "y": 60,
-        "intensity": 9
-      },
-      {
-        "x": 28,
-        "y": 60,
-        "intensity": 8
-      },
-      {
-        "x": 32,
-        "y": 60,
-        "intensity": 7
-      },
-      {
-        "x": 36,
-        "y": 60,
-        "intensity": 7
-      },
-      {
-        "x": 40,
-        "y": 60,
-        "intensity": 6
-      },
-      {
-        "x": 44,
-        "y": 60,
-        "intensity": 5
+        "intensity": 10,
+        "x": 21.4,
+        "y": 51.4
       }
-    ]
+    ],
+    "multi_node_agreement": "HIGH MULTI-NODE CORRELATION (3 nodes in consensus)",
+    "num_elevated_nodes": 3,
+    "priority_level": "CRITICAL",
+    "recommended_action": "PRIORITY RESCUE DISPATCH: Investigate Sector B3 immediately. Use acoustic probe at coords (31.7m, 34.0m).",
+    "target_sector": "Sector B3"
   }
 }

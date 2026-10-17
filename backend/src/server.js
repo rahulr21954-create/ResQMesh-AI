@@ -5,6 +5,25 @@ const { Server } = require('socket.io');
 const cors = require('cors');
 const db = require('./db');
 const fusionEngine = require('./services/fusionEngine');
+const database = require('./db.js');
+
+async function startServer() {
+  try {
+    await database.initialize();
+
+    const PORT = process.env.PORT || 5000;
+
+    app.listen(PORT, '0.0.0.0', () => {
+      console.log(`Server running on port ${PORT}`);
+    });
+  } catch (error) {
+    console.error('Server startup failed:', error);
+    process.exit(1);
+  }
+}
+
+startServer();
+
 
 const app = express();
 const server = http.createServer(app);
